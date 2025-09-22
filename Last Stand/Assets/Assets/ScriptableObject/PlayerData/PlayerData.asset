@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c479d3cfa2cea664eb5ec63886a67609, type: 3}
   m_Name: PlayerData
   m_EditorClassIdentifier: 
-  playerSpeed: 5
+  playerSpeed: 8.5
+  holdShooter: 1

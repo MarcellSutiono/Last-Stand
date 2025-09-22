@@ -38,6 +38,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void move()
     {
+        Debug.Log(pd.playerSpeed);
         rb.linearVelocity = moveValue * pd.playerSpeed;
     }
 }
