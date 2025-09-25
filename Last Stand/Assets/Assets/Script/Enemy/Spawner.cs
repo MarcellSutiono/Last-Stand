@@ -1,9 +1,10 @@
 using UnityEngine;
 
-public class TungtungSpawner : MonoBehaviour 
+public class Spawner : MonoBehaviour 
 {
     public Transform[] spawnpoints;
     public GameObject tungtung;
+    public GameObject tungtungparent;
 
     private void Start()
     {
@@ -13,6 +14,6 @@ public class TungtungSpawner : MonoBehaviour
     {
         int r = Random.Range(0, spawnpoints.Length);
         GameObject Tungtung = Instantiate(tungtung, spawnpoints[r].position, Quaternion.identity);
+        Tungtung.transform.SetParent(tungtungparent.transform);
     }
-
 }

@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: b8778c515013b3246821b2be848c8421
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2043073133013973665
+    second: Newton_0
+  - first:
+      213: 7134118014542897850
+    second: Newton_1
+  - first:
+      213: -7643399191228352325
+    second: Newton_2
+  - first:
+      213: -6910625214794585846
+    second: Newton_3
+  - first:
+      213: -3292872395861415511
+    second: Newton_4
+  - first:
+      213: -5319144728348261281
+    second: Newton_5
+  - first:
+      213: -1478760935866619855
+    second: Newton_6
+  - first:
+      213: -1707196697065458210
+    second: Newton_7
+  - first:
+      213: -944844907782047897
+    second: Newton_8
+  - first:
+      213: -1016672302070521834
+    second: Newton_9
+  - first:
+      213: 6828149412549990010
+    second: Newton_10
+  - first:
+      213: -8453218505481976667
+    second: Newton_11
+  - first:
+      213: 8078585855696062561
+    second: Newton_12
+  - first:
+      213: 8059894386675312945
+    second: Newton_13
+  - first:
+      213: -4680216616970958022
+    second: Newton_14
+  - first:
+      213: -8626699259851560042
+    second: Newton_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Newton_0
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 1519
+        width: 202
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f55ce886fcb85a3e0800000000000000
+      internalID: -2043073133013973665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Newton_1
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 1509
+        width: 202
+        height: 462
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab26b8a398a710360800000000000000
+      internalID: 7134118014542897850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Newton_2
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 1519
+        width: 202
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb8735a9ee03de590800000000000000
+      internalID: -7643399191228352325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Newton_3
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 1509
+        width: 202
+        height: 462
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a09af403bf68810a0800000000000000
+      internalID: -6910625214794585846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Newton_4
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 1039
+        width: 202
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a9adf9900e5d42d0800000000000000
+      internalID: -3292872395861415511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Newton_5
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 1019
+        width: 202
+        height: 472
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5409e53d0a9e26b0800000000000000
+      internalID: -5319144728348261281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Newton_6
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 1039
+        width: 202
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13822fd73c26a7be0800000000000000
+      internalID: -1478760935866619855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Newton_7
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 1019
+        width: 202
+        height: 472
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed571bd26a1de48e0800000000000000
+      internalID: -1707196697065458210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Newton_8
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 559
+        width: 172
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76770d7ff8c33e2f0800000000000000
+      internalID: -944844907782047897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Newton_9
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 559
+        width: 182
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 610ab168ded04e1f0800000000000000
+      internalID: -1016672302070521834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Newton_10
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 559
+        width: 172
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a769550b6b572ce50800000000000000
+      internalID: 6828149412549990010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Newton_11
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 559
+        width: 182
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a40dfb6e8220ba80800000000000000
+      internalID: -8453218505481976667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Newton_12
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 79
+        width: 172
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16842489807ec1070800000000000000
+      internalID: 8078585855696062561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Newton_13
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 79
+        width: 182
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13962f4dd3f7adf60800000000000000
+      internalID: 8059894386675312945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Newton_14
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 79
+        width: 172
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3bc091a8c78c0fb0800000000000000
+      internalID: -4680216616970958022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Newton_15
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 79
+        width: 182
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69b2c68babec74880800000000000000
+      internalID: -8626699259851560042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Newton_0: -2043073133013973665
+      Newton_1: 7134118014542897850
+      Newton_10: 6828149412549990010
+      Newton_11: -8453218505481976667
+      Newton_12: 8078585855696062561
+      Newton_13: 8059894386675312945
+      Newton_14: -4680216616970958022
+      Newton_15: -8626699259851560042
+      Newton_2: -7643399191228352325
+      Newton_3: -6910625214794585846
+      Newton_4: -3292872395861415511
+      Newton_5: -5319144728348261281
+      Newton_6: -1478760935866619855
+      Newton_7: -1707196697065458210
+      Newton_8: -944844907782047897
+      Newton_9: -1016672302070521834
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

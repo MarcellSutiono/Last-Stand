@@ -19,10 +19,12 @@ public class Shooter : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.CompareTag("Player"))
+        if (col.CompareTag("Player") && (!pd.holdStunner && !pd.holdKnocker))
         {
             interactText.text = "Took";
             interactButtonUI.SetActive(true);
+
+            interactButton.onClick.RemoveAllListeners();
             interactButton.onClick.AddListener(() =>
             {
                 pd.holdShooter = true;

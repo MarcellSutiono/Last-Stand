@@ -5,4 +5,6 @@ public class PlayerData : ScriptableObject
 {
     public float playerSpeed = 15f;
     public bool holdShooter = false;
+    public bool holdStunner = false;
+    public bool holdKnocker = false;
 }
