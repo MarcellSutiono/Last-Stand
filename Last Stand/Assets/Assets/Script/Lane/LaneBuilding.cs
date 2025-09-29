@@ -16,6 +16,17 @@ public class LaneBuilding : MonoBehaviour
     [SerializeField] private GameObject interactButtonUI;
     [SerializeField] private Button interactButton;
     [SerializeField] private TextMeshProUGUI interactText;
+
+    //------------- OTHERS -------------
+    private BoxCollider2D laneCollider;
+    private float centerY;
+
+    private void Start()
+    {
+        laneCollider = gameObject.GetComponent<BoxCollider2D>();
+        centerY = laneCollider.bounds.center.y;
+    }
+
     private void OnTriggerStay2D(Collider2D col)
     {
         if (col.CompareTag("Player") && pd.holdShooter)
@@ -26,7 +37,10 @@ public class LaneBuilding : MonoBehaviour
             interactButton.onClick.RemoveAllListeners();
             interactButton.onClick.AddListener(() => {
                 pd.holdShooter = false;
-                shooter.transform.position = player.transform.position + new Vector3(1f, 0f, 0f);
+
+                float playerX = player.transform.position.x;
+                shooter.transform.position = new Vector3(playerX + 1f, centerY, 0f);
+
                 shooter.gameObject.SetActive(true);
             });
         }
@@ -38,7 +52,10 @@ public class LaneBuilding : MonoBehaviour
             interactButton.onClick.RemoveAllListeners();
             interactButton.onClick.AddListener(() => {
                 pd.holdStunner = false;
-                stunner.transform.position = player.transform.position + new Vector3(1f, 0f, 0f);
+
+                float playerX = player.transform.position.x;
+                stunner.transform.position = new Vector3(playerX + 1f, centerY, 0f);
+
                 stunner.gameObject.SetActive(true);
                 
                 Stunner st = stunner.GetComponent<Stunner>();
