@@ -7,6 +7,7 @@ public class LaneBuilding : MonoBehaviour
     //------------- WEAPONS -------------
     [SerializeField] private GameObject shooter;
     [SerializeField] private GameObject stunner;
+    [SerializeField] private GameObject knocker;
 
     //------------- PLAYER --------------
     [SerializeField] private PlayerData pd;
@@ -60,6 +61,24 @@ public class LaneBuilding : MonoBehaviour
                 
                 Stunner st = stunner.GetComponent<Stunner>();
                 st.stun();
+            });
+        }
+        else if (col.CompareTag("Player") && pd.holdKnocker)
+        {
+            interactText.text = "Place Knocker";
+            interactButtonUI.SetActive(true);
+
+            interactButton.onClick.RemoveAllListeners();
+            interactButton.onClick.AddListener(() => {
+                pd.holdKnocker = false;
+
+                float playerX = player.transform.position.x;
+                knocker.transform.position = new Vector3(playerX + 1f, centerY, 0f);
+
+                knocker.gameObject.SetActive(true);
+
+                Knocker kn = knocker.GetComponent<Knocker>();
+                kn.knock();
             });
         }
     }

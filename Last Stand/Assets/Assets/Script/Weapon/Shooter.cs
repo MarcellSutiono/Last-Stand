@@ -13,15 +13,15 @@ public class Shooter : MonoBehaviour
     [SerializeField] private TextMeshProUGUI interactText;
 
     //------------- SHOOTER -------------
+    [SerializeField] private ShooterData sd;
     [SerializeField] private GameObject bullet;
-    [SerializeField] private float shootDelay = 1.4f;
     private float shootTimer = 0;
 
-    private void OnTriggerEnter2D(Collider2D col)
+    private void OnTriggerStay2D(Collider2D col)
     {
         if (col.CompareTag("Player") && (!pd.holdStunner && !pd.holdKnocker))
         {
-            interactText.text = "Took";
+            interactText.text = "Took Shooter";
             interactButtonUI.SetActive(true);
 
             interactButton.onClick.RemoveAllListeners();
@@ -49,7 +49,7 @@ public class Shooter : MonoBehaviour
         if (!pd.holdShooter)
         {
             shootTimer += Time.deltaTime;
-            if (shootTimer >= shootDelay)
+            if (shootTimer >= sd.shootDelay)
             {
                 shootTimer = 0;
                 Instantiate(bullet, transform.position, Quaternion.identity);
