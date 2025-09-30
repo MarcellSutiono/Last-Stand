@@ -9,13 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c479d3cfa2cea664eb5ec63886a67609, type: 3}
-  m_Name: PlayerData
+  m_Script: {fileID: 11500000, guid: 179bbd706e7561e4fb25c098cdcd5e89, type: 3}
+  m_Name: CappuccinoAssasino
   m_EditorClassIdentifier: 
-  playerSpeed: 8.5
-  holdShooter: 0
-  holdStunner: 0
-  holdKnocker: 0
-  exp: 0
-  level: 1
-  expNeeded: 100
+  speed: 7
+  attackCooldown: 3
+  stunDuration: 0

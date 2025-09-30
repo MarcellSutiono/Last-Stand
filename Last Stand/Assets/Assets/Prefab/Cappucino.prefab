@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 7683380007020483308}
   - component: {fileID: 1410178161752579186}
-  - component: {fileID: 9061643410695200205}
+  - component: {fileID: 3261218589939254537}
   - component: {fileID: 7786840115408728261}
   - component: {fileID: 8388231533134314845}
   m_Layer: 0
-  m_Name: Tungtung
+  m_Name: Cappucino
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 13.28, y: 8.05, z: 0}
-  m_LocalScale: {x: 1.4763995, y: 1.2416562, z: 1}
+  m_LocalScale: {x: 0.29820317, y: 0.2507897, z: 0.20198}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 22480455680902427}
@@ -80,7 +80,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -6789427119158001968, guid: 389bcff9e08199549a5a9cd151ff3c9d, type: 3}
+  m_Sprite: {fileID: -874920611596970344, guid: 439d00af237d4644aa0c3c3f54b0ef4d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -91,7 +91,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &9061643410695200205
+--- !u!114 &3261218589939254537
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -100,13 +100,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 4340046712327427775}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff1e237e5fe410d448ec6ffed5703df3, type: 3}
+  m_Script: {fileID: 11500000, guid: 711e2c0f59fddce4db38747feed55fe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isAttacking: 0
   isStunned: 0
   pd: {fileID: 11400000, guid: c3dd65029d1af22499085f8719e84b74, type: 2}
-  ttsd: {fileID: 11400000, guid: 7bea342dcaf60584694d071fe26ee793, type: 2}
+  cad: {fileID: 11400000, guid: a292a37405b22c74483b9c729c098eb7, type: 2}
   shd: {fileID: 11400000, guid: a8349b994e0a1744e8830b1b53995d03, type: 2}
   std: {fileID: 11400000, guid: 39f7f0b52ea2907468e72521517925fd, type: 2}
 --- !u!61 &7786840115408728261
@@ -143,17 +143,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.24637902, y: -0.4231701}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.37, y: 3.15}
+    oldSize: {x: 9.74, y: 9.42}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.37, y: 3.15}
+  m_Size: {x: 4.600339, y: 8.944143}
   m_EdgeRadius: 0
 --- !u!50 &8388231533134314845
 Rigidbody2D:
@@ -192,7 +192,7 @@ GameObject:
   m_Component:
   - component: {fileID: 22480455680902427}
   - component: {fileID: 5723626908123630718}
-  - component: {fileID: 7182375032940484086}
+  - component: {fileID: 4763080618103007740}
   m_Layer: 0
   m_Name: AttackCollider
   m_TagString: Untagged
@@ -249,7 +249,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.062640846, y: -0.00000059604645}
+  m_Offset: {x: -1.9789445, y: -0.5208217}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -259,9 +259,9 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.1252816, y: 0.63331485}
+  m_Size: {x: 3.205834, y: 5.9717407}
   m_EdgeRadius: 0
---- !u!114 &7182375032940484086
+--- !u!114 &4763080618103007740
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -270,7 +270,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6045588769837120396}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3998abc9a33fd1f44a6eff535fbeb5ea, type: 3}
+  m_Script: {fileID: 11500000, guid: f3bb94390226b734baf4821159c08bde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tts: {fileID: 4340046712327427775}
+  cappuccino: {fileID: 4340046712327427775}

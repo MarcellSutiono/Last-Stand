@@ -13,7 +13,8 @@ public class Stunner : MonoBehaviour
     [SerializeField] private TextMeshProUGUI interactText;
 
     //------------- Stunner -------------
-    [SerializeField] private GameObject tungTungSahur;
+    [SerializeField] private GameObject tungTungSahurParent;
+    [SerializeField] private GameObject cappucinoParent;
     [SerializeField] private StunnerData std;
     private float stunTimer = 0f;
 
@@ -49,9 +50,9 @@ public class Stunner : MonoBehaviour
         {
             stunTimer = 0f;
 
-            for (int i = 0; i < tungTungSahur.transform.childCount; i++)
+            for (int i = 0; i < tungTungSahurParent.transform.childCount; i++)
             {
-                GameObject tts = tungTungSahur.transform.GetChild(i).gameObject;
+                GameObject tts = tungTungSahurParent.transform.GetChild(i).gameObject;
                 TungTungSahur ttsScript = tts.GetComponent<TungTungSahur>();
                 if (ttsScript.isActiveAndEnabled)
                 {
@@ -59,6 +60,15 @@ public class Stunner : MonoBehaviour
                 }
             }
 
+            for (int i = 0; i < cappucinoParent.transform.childCount; i++)
+            {
+                GameObject ca = cappucinoParent.transform.GetChild(i).gameObject;
+                CappuccinoAssasino caScript = ca.GetComponent<CappuccinoAssasino>();
+                if (caScript.isActiveAndEnabled)
+                {
+                    caScript.stunCappuccino(2f);
+                }
+            }
         }
     }
 

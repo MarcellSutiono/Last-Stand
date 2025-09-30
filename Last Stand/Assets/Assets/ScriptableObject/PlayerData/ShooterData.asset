@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca3289e51f7177e48b03d5905ed333b4, type: 3}
   m_Name: ShooterData
   m_EditorClassIdentifier: 
-  shootDelay: 2.4
+  health: 9
+  shootDelay: 1.2

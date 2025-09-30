@@ -14,7 +14,8 @@ public class Knocker : MonoBehaviour
 
     //------------- KNOCKER -------------
     [SerializeField] private float knockCooldown = 2f;
-    [SerializeField] private GameObject tungTungSahur;
+    [SerializeField] private GameObject tungTungSahurParent;
+    [SerializeField] private GameObject cappuccinoParent;
     private float knockTimer = 0f;
 
     private void OnTriggerStay2D(Collider2D col)
@@ -49,9 +50,9 @@ public class Knocker : MonoBehaviour
         {
             knockTimer = 0f;
 
-            for (int i = 0; i < tungTungSahur.transform.childCount; i++)
+            for (int i = 0; i < tungTungSahurParent.transform.childCount; i++)
             {
-                GameObject tts = tungTungSahur.transform.GetChild(i).gameObject;
+                GameObject tts = tungTungSahurParent.transform.GetChild(i).gameObject;
                 TungTungSahur ttsScript = tts.GetComponent<TungTungSahur>();
                 if (ttsScript.isActiveAndEnabled)
                 {
@@ -59,6 +60,15 @@ public class Knocker : MonoBehaviour
                 }
             }
 
+            for (int i = 0; i < cappuccinoParent.transform.childCount; i++)
+            {
+                GameObject tts = cappuccinoParent.transform.GetChild(i).gameObject;
+                CappuccinoAssasino caScript = tts.GetComponent<CappuccinoAssasino>();
+                if (caScript.isActiveAndEnabled)
+                {
+                    caScript.knockCappuccino(5f);
+                }
+            }
         }
     }
 }

@@ -1,15 +1,14 @@
 using UnityEngine;
 
-public class TungTungSahur : MonoBehaviour
+public class CappuccinoAssasino : MonoBehaviour
 {
-    private int health = 2;
+    private int health = 1;
     public bool isAttacking = false;
     public bool isStunned = false;
     private float attackTimer = 0f;
-    private float stunTimer = 0f;
 
     [SerializeField] private PlayerData pd;
-    [SerializeField] private TungTungTungSahurData ttsd;
+    [SerializeField] private CappuccinoAssasinoData cad;
     [SerializeField] private ShooterData shd;
     [SerializeField] private StunnerData std;
 
@@ -17,23 +16,13 @@ public class TungTungSahur : MonoBehaviour
     {
         deathChecker();
         attackStopwatch();
-
-        if (isStunned)
-        {
-            stunTimer += Time.deltaTime;
-            if (stunTimer >= ttsd.stunDuration)
-            {
-                stunTimer = 0f;
-                isStunned = false;
-            }
-        }
     }
 
     private void FixedUpdate()
     {
-        if(!isStunned && !isAttacking)
+        if (!isStunned && !isAttacking)
         {
-            transform.position -= new Vector3(ttsd.speed * 0.01f, 0, 0);
+            transform.position -= new Vector3(cad.speed * 0.01f, 0, 0);
         }
     }
 
@@ -49,9 +38,9 @@ public class TungTungSahur : MonoBehaviour
     private void attackStopwatch()
     {
         attackTimer += Time.deltaTime;
-        if (attackTimer >= ttsd.attackCooldown)
+        if (attackTimer >= cad.attackCooldown)
         {
-            attackTimer = ttsd.attackCooldown;
+            attackTimer = cad.attackCooldown;
         }
     }
 
@@ -60,25 +49,25 @@ public class TungTungSahur : MonoBehaviour
     {
         if (health <= 0)
         {
-            Destroy(gameObject);
             pd.exp = pd.exp + 10;
+            Destroy(gameObject);
         }
     }
 
-    public void stunTungTungSahur(float duration)
+    public void stunCappuccino(float duration)
     {
         isStunned = true;
-        ttsd.stunDuration = duration;
+        cad.stunDuration = duration;
     }
 
-    public void knockTungTungSahur(float power)
+    public void knockCappuccino(float power)
     {
         transform.position += new Vector3(power, 0, 0);
     }
 
     public void attack(GameObject weapon)
     {
-        if (attackTimer >= ttsd.attackCooldown)
+        if (attackTimer >= cad.attackCooldown)
         {
             if (weapon.CompareTag("Shooter"))
             {
