@@ -16,6 +16,7 @@ public class Knocker : MonoBehaviour
     [SerializeField] private float knockCooldown = 2f;
     [SerializeField] private GameObject tungTungSahurParent;
     [SerializeField] private GameObject cappuccinoParent;
+    private Animator anim;
     private float knockTimer = 0f;
 
     private void OnTriggerStay2D(Collider2D col)
@@ -39,6 +40,10 @@ public class Knocker : MonoBehaviour
         interactButtonUI.SetActive(false);
     }
 
+    private void Start()
+    {
+        anim = GetComponent<Animator>();
+    }
     private void Update()
     {
         knockTimer += Time.deltaTime;
@@ -48,6 +53,7 @@ public class Knocker : MonoBehaviour
     {
         if (knockTimer >= knockCooldown && !pd.holdStunner)
         {
+            anim.SetTrigger("Knock");
             knockTimer = 0f;
 
             for (int i = 0; i < tungTungSahurParent.transform.childCount; i++)

@@ -1,25 +1,19 @@
 fileFormatVersion: 2
-guid: c1f04c2b1adb2734ca85080595efd490
+guid: 7ca61dc49117f364bb9a6f588e0bb53e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4562689133812890041
-    second: Tongkat Jalan-Sheet_0
+      213: -4566190091907096745
+    second: camera_0
   - first:
-      213: -2142842207618067077
-    second: Tongkat Jalan-Sheet_1
+      213: -363897418689088276
+    second: camera_1
   - first:
-      213: -5621479816369560148
-    second: Tongkat Jalan-Sheet_2
+      213: -3497596737771092960
+    second: camera_2
   - first:
-      213: -3602108515962243905
-    second: Tongkat Jalan-Sheet_3
-  - first:
-      213: 4071636322980379745
-    second: Tongkat Jalan-Sheet_4
-  - first:
-      213: 7319741197387951530
-    second: Tongkat Jalan-Sheet_5
+      213: 2751258179866357205
+    second: camera_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -90,7 +84,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -128,181 +122,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tongkat Jalan-Sheet_0
+      name: camera_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 240
-        height: 320
+        x: 350
+        y: 86
+        width: 443
+        height: 883
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 7464c8e28621ea0c0800000000000000
-      internalID: -4562689133812890041
+      spriteID: 75f18fadd42a1a0c0800000000000000
+      internalID: -4566190091907096745
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tongkat Jalan-Sheet_1
+      name: camera_1
       rect:
         serializedVersion: 2
-        x: 240
-        y: 0
-        width: 240
-        height: 320
+        x: 1450
+        y: 86
+        width: 443
+        height: 883
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b75163d8d581342e0800000000000000
-      internalID: -2142842207618067077
+      spriteID: ce4fa58c93d23faf0800000000000000
+      internalID: -363897418689088276
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tongkat Jalan-Sheet_2
+      name: camera_2
       rect:
         serializedVersion: 2
-        x: 480
-        y: 0
-        width: 240
-        height: 320
+        x: 2550
+        y: 86
+        width: 443
+        height: 907
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: ca5a34114ed7cf1b0800000000000000
-      internalID: -5621479816369560148
+      spriteID: 024c69d4c4a067fc0800000000000000
+      internalID: -3497596737771092960
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tongkat Jalan-Sheet_3
+      name: camera_3
       rect:
         serializedVersion: 2
-        x: 720
-        y: 0
-        width: 240
-        height: 320
+        x: 3650
+        y: 86
+        width: 443
+        height: 1014
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: fb439a7b36db20ec0800000000000000
-      internalID: -3602108515962243905
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tongkat Jalan-Sheet_4
-      rect:
-        serializedVersion: 2
-        x: 960
-        y: 0
-        width: 240
-        height: 320
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline:
-      - - {x: 258, y: -1}
-        - {x: 355, y: -1}
-        - {x: 355, y: -1}
-        - {x: 258, y: -1}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 16cb2ddc9ab518830800000000000000
-      internalID: 4071636322980379745
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tongkat Jalan-Sheet_5
-      rect:
-        serializedVersion: 2
-        x: 1200
-        y: 0
-        width: 240
-        height: 320
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aade91e56d1f49560800000000000000
-      internalID: 7319741197387951530
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tongkat Jalan-Sheet_6
-      rect:
-        serializedVersion: 2
-        x: 1440
-        y: 0
-        width: 240
-        height: 320
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c157bf52bb3dbbe44addecacacea55e7
-      internalID: 215008457
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tongkat Jalan-Sheet_7
-      rect:
-        serializedVersion: 2
-        x: 1680
-        y: 0
-        width: 240
-        height: 320
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 86a10fafede164549857fdfeb9df348f
-      internalID: -1126651344
+      spriteID: 5dd6250ecbe6e2620800000000000000
+      internalID: 2751258179866357205
       vertices: []
       indices: 
       edges: []
@@ -311,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 91f5b0143f781b0418bdd619fa509545
+    spriteID: d61d6a6d96a009549a6db3b290f0c92d
     internalID: 0
     vertices: []
     indices: 
@@ -321,14 +223,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Tongkat Jalan-Sheet_0: -4562689133812890041
-      Tongkat Jalan-Sheet_1: -2142842207618067077
-      Tongkat Jalan-Sheet_2: -5621479816369560148
-      Tongkat Jalan-Sheet_3: -3602108515962243905
-      Tongkat Jalan-Sheet_4: 4071636322980379745
-      Tongkat Jalan-Sheet_5: 7319741197387951530
-      Tongkat Jalan-Sheet_6: 215008457
-      Tongkat Jalan-Sheet_7: -1126651344
+      camera_0: -4566190091907096745
+      camera_1: -363897418689088276
+      camera_2: -3497596737771092960
+      camera_3: 2751258179866357205
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
