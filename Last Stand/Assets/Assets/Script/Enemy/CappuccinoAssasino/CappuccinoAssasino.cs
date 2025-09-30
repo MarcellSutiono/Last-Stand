@@ -6,6 +6,7 @@ public class CappuccinoAssasino : MonoBehaviour
     public bool isAttacking = false;
     public bool isStunned = false;
     private float attackTimer = 0f;
+    private float stunTimer = 0f;
 
     [SerializeField] private PlayerData pd;
     [SerializeField] private CappuccinoAssasinoData cad;
@@ -16,6 +17,20 @@ public class CappuccinoAssasino : MonoBehaviour
     {
         deathChecker();
         attackStopwatch();
+        stunStopwatch();
+    }
+
+    private void stunStopwatch()
+    {
+        if (isStunned)
+        {
+            stunTimer += Time.deltaTime;
+            if (stunTimer >= cad.stunDuration)
+            {
+                stunTimer = 0f;
+                isStunned = false;
+            }
+        }
     }
 
     private void FixedUpdate()

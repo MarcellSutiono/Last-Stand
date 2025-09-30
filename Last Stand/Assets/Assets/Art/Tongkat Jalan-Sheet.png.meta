@@ -272,7 +272,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Tongkat Jalan-Sheet_0: -4562689133812890041
+      Tongkat Jalan-Sheet_1: -2142842207618067077
+      Tongkat Jalan-Sheet_2: -5621479816369560148
+      Tongkat Jalan-Sheet_3: -3602108515962243905
+      Tongkat Jalan-Sheet_4: 4071636322980379745
+      Tongkat Jalan-Sheet_5: 7319741197387951530
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

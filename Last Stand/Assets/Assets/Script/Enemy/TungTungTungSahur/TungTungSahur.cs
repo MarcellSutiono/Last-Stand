@@ -17,7 +17,11 @@ public class TungTungSahur : MonoBehaviour
     {
         deathChecker();
         attackStopwatch();
+        stunStopwatch();
+    }
 
+    private void stunStopwatch()
+    {
         if (isStunned)
         {
             stunTimer += Time.deltaTime;

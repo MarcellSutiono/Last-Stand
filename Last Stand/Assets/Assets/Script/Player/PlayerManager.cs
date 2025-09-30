@@ -7,6 +7,7 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private PlayerData pd;
     public Slider slider;
     public TextMeshProUGUI levelText;
+    public TextMeshProUGUI expText;
 
     private void Start()
     {
@@ -17,6 +18,8 @@ public class PlayerManager : MonoBehaviour
     private void Update()
     {
         levelText.text = pd.level.ToString();
+        expText.text = $"{pd.exp} / {pd.expNeeded}";
+
         levelUpChecker();
     }
 
@@ -27,6 +30,7 @@ public class PlayerManager : MonoBehaviour
         {
             pd.exp = 0;
             pd.level++;
+            pd.expNeeded += 15 * pd.level;
         }
     }
 }
