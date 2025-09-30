@@ -1610,14 +1610,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cc60ac08a75d7e488e242665f9741ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnpoints:
-  - {fileID: 349429785}
-  - {fileID: 1665046207}
-  - {fileID: 1809724178}
-  - {fileID: 944639900}
-  - {fileID: 207579298}
-  tungtung: {fileID: 4340046712327427775, guid: 71fa07f9c0c5d2f4baf0397bcd3e7cb1, type: 3}
-  tungtungparent: {fileID: 780855262}
 --- !u!4 &1182134771
 Transform:
   m_ObjectHideFlags: 0
