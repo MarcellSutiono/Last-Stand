@@ -125,10 +125,10 @@ TextureImporter:
       name: Coffee Attack-Sheet_0
       rect:
         serializedVersion: 2
-        x: 109
+        x: 0
         y: 0
-        width: 192
-        height: 321
+        width: 300
+        height: 330
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,10 +147,10 @@ TextureImporter:
       name: Coffee Attack-Sheet_1
       rect:
         serializedVersion: 2
-        x: 299
+        x: 300
         y: 0
-        width: 292
-        height: 321
+        width: 300
+        height: 330
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,10 +169,10 @@ TextureImporter:
       name: Coffee Attack-Sheet_2
       rect:
         serializedVersion: 2
-        x: 639
+        x: 600
         y: 0
-        width: 252
-        height: 231
+        width: 300
+        height: 330
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,10 +191,10 @@ TextureImporter:
       name: Coffee Attack-Sheet_3
       rect:
         serializedVersion: 2
-        x: 959
+        x: 900
         y: 0
-        width: 241
-        height: 321
+        width: 300
+        height: 330
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,11 +209,33 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Coffee Attack-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 300
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7872ca96adc218948be0bff1726011a7
+      internalID: -613318506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: ce046af622cf7d9489fa4974314c2af3
     internalID: 0
     vertices: []
     indices: 
@@ -222,7 +244,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Coffee Attack-Sheet_0: -3744782909162240107
+      Coffee Attack-Sheet_1: -6991883105558953917
+      Coffee Attack-Sheet_2: 5569894727021335945
+      Coffee Attack-Sheet_3: -3523398791902673818
+      Coffee Attack-Sheet_4: -613318506
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

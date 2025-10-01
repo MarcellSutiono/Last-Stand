@@ -422,7 +422,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Newton Attack-Sheet_0: -5936458412109121763
+      Newton Attack-Sheet_1: -6459432408016149996
+      Newton Attack-Sheet_10: -6848322766494179257
+      Newton Attack-Sheet_11: 4012698193471352100
+      Newton Attack-Sheet_2: 5368676550980650291
+      Newton Attack-Sheet_3: -4907109251703427458
+      Newton Attack-Sheet_4: -8204289881726684541
+      Newton Attack-Sheet_5: 3442738089773076368
+      Newton Attack-Sheet_6: 3541335706543416322
+      Newton Attack-Sheet_7: -4427785747947320846
+      Newton Attack-Sheet_8: -121728111494756008
+      Newton Attack-Sheet_9: -1209218284410496198
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -162,11 +162,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1418
-        width: 290
-        height: 472
+        y: 1370
+        width: 200
+        height: 460
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -183,12 +183,12 @@ TextureImporter:
       name: Newton_1
       rect:
         serializedVersion: 2
-        x: 290
-        y: 1418
-        width: 290
-        height: 472
+        x: 200
+        y: 1370
+        width: 200
+        height: 460
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -205,12 +205,12 @@ TextureImporter:
       name: Newton_2
       rect:
         serializedVersion: 2
-        x: 580
-        y: 1418
-        width: 290
-        height: 472
+        x: 400
+        y: 1370
+        width: 200
+        height: 460
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -227,12 +227,12 @@ TextureImporter:
       name: Newton_3
       rect:
         serializedVersion: 2
-        x: 870
-        y: 1418
-        width: 290
-        height: 472
+        x: 600
+        y: 1370
+        width: 200
+        height: 460
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -250,11 +250,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 946
-        width: 290
-        height: 472
+        y: 900
+        width: 200
+        height: 470
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -271,12 +271,12 @@ TextureImporter:
       name: Newton_5
       rect:
         serializedVersion: 2
-        x: 290
-        y: 946
-        width: 290
-        height: 472
+        x: 200
+        y: 900
+        width: 200
+        height: 470
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -293,12 +293,12 @@ TextureImporter:
       name: Newton_6
       rect:
         serializedVersion: 2
-        x: 580
-        y: 946
-        width: 290
-        height: 472
+        x: 400
+        y: 900
+        width: 200
+        height: 470
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -315,12 +315,12 @@ TextureImporter:
       name: Newton_7
       rect:
         serializedVersion: 2
-        x: 870
-        y: 946
-        width: 290
-        height: 472
+        x: 600
+        y: 900
+        width: 200
+        height: 470
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -338,11 +338,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 474
-        width: 290
-        height: 472
+        y: 450
+        width: 200
+        height: 450
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -359,12 +359,12 @@ TextureImporter:
       name: Newton_9
       rect:
         serializedVersion: 2
-        x: 290
-        y: 474
-        width: 290
-        height: 472
+        x: 200
+        y: 450
+        width: 200
+        height: 450
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -381,12 +381,12 @@ TextureImporter:
       name: Newton_10
       rect:
         serializedVersion: 2
-        x: 580
-        y: 474
-        width: 290
-        height: 472
+        x: 400
+        y: 450
+        width: 200
+        height: 450
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -403,12 +403,12 @@ TextureImporter:
       name: Newton_11
       rect:
         serializedVersion: 2
-        x: 870
-        y: 474
-        width: 290
-        height: 472
+        x: 600
+        y: 450
+        width: 200
+        height: 450
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -427,10 +427,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 2
-        width: 290
-        height: 472
+        width: 200
+        height: 448
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -447,12 +447,12 @@ TextureImporter:
       name: Newton_13
       rect:
         serializedVersion: 2
-        x: 290
+        x: 200
         y: 2
-        width: 290
-        height: 472
+        width: 200
+        height: 448
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -469,12 +469,12 @@ TextureImporter:
       name: Newton_14
       rect:
         serializedVersion: 2
-        x: 580
+        x: 400
         y: 2
-        width: 290
-        height: 472
+        width: 200
+        height: 448
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -491,12 +491,12 @@ TextureImporter:
       name: Newton_15
       rect:
         serializedVersion: 2
-        x: 870
+        x: 600
         y: 2
-        width: 290
-        height: 472
+        width: 200
+        height: 448
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
