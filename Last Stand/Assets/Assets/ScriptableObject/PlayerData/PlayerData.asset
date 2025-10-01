@@ -18,4 +18,5 @@ MonoBehaviour:
   holdKnocker: 0
   exp: 0
   level: 1
-  expNeeded: 100
+  expNeeded: 130
+  resource: 0

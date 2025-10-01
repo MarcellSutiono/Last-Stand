@@ -1013,7 +1013,7 @@ MonoBehaviour:
   interactButton: {fileID: 1250046733}
   interactText: {fileID: 2087344396}
   shooterShadow: {fileID: 222420064}
-  stunnerShadow: {fileID: 0}
+  stunnerShadow: {fileID: 1918819122}
   knockerShadow: {fileID: 1393299596}
 --- !u!1 &519420028
 GameObject:
@@ -1666,7 +1666,7 @@ MonoBehaviour:
   interactButton: {fileID: 1250046733}
   interactText: {fileID: 2087344396}
   shooterShadow: {fileID: 222420064}
-  stunnerShadow: {fileID: 0}
+  stunnerShadow: {fileID: 1918819122}
   knockerShadow: {fileID: 1393299596}
 --- !u!1 &855127106
 GameObject:
@@ -2462,7 +2462,7 @@ MonoBehaviour:
   interactButton: {fileID: 1250046733}
   interactText: {fileID: 2087344396}
   shooterShadow: {fileID: 222420064}
-  stunnerShadow: {fileID: 0}
+  stunnerShadow: {fileID: 1918819122}
   knockerShadow: {fileID: 1393299596}
 --- !u!1001 &1047486386
 PrefabInstance:
@@ -2621,7 +2621,7 @@ MonoBehaviour:
   interactButton: {fileID: 1250046733}
   interactText: {fileID: 2087344396}
   shooterShadow: {fileID: 222420064}
-  stunnerShadow: {fileID: 0}
+  stunnerShadow: {fileID: 1918819122}
   knockerShadow: {fileID: 1393299596}
 --- !u!1 &1103103672
 GameObject:
@@ -2873,7 +2873,7 @@ MonoBehaviour:
   interactButton: {fileID: 1250046733}
   interactText: {fileID: 2087344396}
   shooterShadow: {fileID: 222420064}
-  stunnerShadow: {fileID: 0}
+  stunnerShadow: {fileID: 1918819122}
   knockerShadow: {fileID: 1393299596}
 --- !u!1 &1250046732
 GameObject:
@@ -3635,6 +3635,11 @@ Transform:
   - {fileID: 207579298}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1918819122 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2412785981720133228, guid: 26d4e9732ec79ef4d9bb1950e750909f, type: 3}
+  m_PrefabInstance: {fileID: 1047486386}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1937056736
 GameObject:
   m_ObjectHideFlags: 0
@@ -4286,11 +4291,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4350814321964267765, guid: bb2fb06f5dddecc4c921488e98879298, type: 3}
       propertyPath: m_Size.y
-      value: 2.3343577
+      value: 1.9257262
       objectReference: {fileID: 0}
     - target: {fileID: 4350814321964267765, guid: bb2fb06f5dddecc4c921488e98879298, type: 3}
       propertyPath: m_Offset.y
-      value: 0.10404321
+      value: -0.016872654
       objectReference: {fileID: 0}
     - target: {fileID: 4350814321964267765, guid: bb2fb06f5dddecc4c921488e98879298, type: 3}
       propertyPath: m_IsTrigger

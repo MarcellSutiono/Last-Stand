@@ -32,7 +32,7 @@ public class LaneBuilding : MonoBehaviour
     private void Start()
     {
         laneCollider = gameObject.GetComponent<BoxCollider2D>();
-        centerY = laneCollider.bounds.center.y;
+        centerY = laneCollider.bounds.min.y + 0.5f;
     }
 
     private void OnTriggerStay2D(Collider2D col)

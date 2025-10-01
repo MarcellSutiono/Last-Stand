@@ -72,7 +72,7 @@ public class Shooter : MonoBehaviour
             {
                 shootTimer = 0;
 
-                GameObject bulletGameObject = Instantiate(bullet, transform.position, Quaternion.identity);
+                GameObject bulletGameObject = Instantiate(bullet, transform.position + new Vector3(1f, 1.25f, 0), Quaternion.identity);
 
                 if (sd.level == 1)
                 {

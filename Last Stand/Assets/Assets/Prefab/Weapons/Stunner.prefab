@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 1194994348835818004}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.03, y: -3.56, z: 0}
+  m_LocalPosition: {x: -0.03, y: -0, z: 0}
   m_LocalScale: {x: 4.699822, y: 1.1558537, z: 0.68024063}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -116,7 +116,7 @@ Transform:
   m_GameObject: {fileID: 2412785981720133228}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.588, y: 1.0087, z: 0}
+  m_LocalPosition: {x: -14.588, y: -0.03, z: 0}
   m_LocalScale: {x: 0.3416879, y: 0.3416879, z: 0.3416879}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -213,8 +213,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.04915211, y: -0.26381737}
-  m_Size: {x: 6.517656, y: 9.632202}
+  m_Offset: {x: -0.04915211, y: 3.0879726}
+  m_Size: {x: 6.517656, y: 9.44066}
   m_Direction: 0
 --- !u!114 &700494687122343511
 MonoBehaviour:
@@ -237,6 +237,7 @@ MonoBehaviour:
   std: {fileID: 11400000, guid: 39f7f0b52ea2907468e72521517925fd, type: 2}
   flashImage: {fileID: 0}
   flashSpeed: 0.25
+  levelIndicator: {fileID: 0}
 --- !u!95 &5999203364544034636
 Animator:
   serializedVersion: 7
@@ -294,7 +295,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -904.25, y: -411.34}
+  m_AnchoredPosition: {x: -904.25, y: -410.11}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &107481996119628077
