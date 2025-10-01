@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class PlayerManager : MonoBehaviour
 {
     [SerializeField] private PlayerData pd;
+    public TextMeshProUGUI resourceCount;
     public Slider slider;
     public TextMeshProUGUI levelText;
     public TextMeshProUGUI expText;
@@ -20,6 +21,8 @@ public class PlayerManager : MonoBehaviour
         levelText.text = pd.level.ToString();
         expText.text = $"{pd.exp} / {pd.expNeeded}";
 
+        resourceCount.text = pd.resource.ToString();
+
         levelUpChecker();
     }
 
@@ -30,6 +33,7 @@ public class PlayerManager : MonoBehaviour
         {
             pd.exp = 0;
             pd.level++;
+            pd.resource++;
             pd.expNeeded += 15 * pd.level;
         }
     }

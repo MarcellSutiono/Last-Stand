@@ -21,6 +21,7 @@ public class Stunner : MonoBehaviour
     [SerializeField] private float flashSpeed = 0.5f;
     private Animator anim;
     private float stunTimer = 0f;
+    public TextMeshProUGUI levelIndicator;
 
     private void OnTriggerStay2D(Collider2D col)
     {
@@ -50,6 +51,7 @@ public class Stunner : MonoBehaviour
     private void Update()
     {
         stunTimer += Time.deltaTime;
+        levelIndicator.text = std.level.ToString();
     }
 
     public void stun()

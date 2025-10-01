@@ -11,4 +11,5 @@ public class PlayerData : ScriptableObject
     public int exp = 0;
     public int level = 1;
     public int expNeeded = 10;
+    public int resource = 0;
 }

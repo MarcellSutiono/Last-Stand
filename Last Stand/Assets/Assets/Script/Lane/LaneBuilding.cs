@@ -18,9 +18,16 @@ public class LaneBuilding : MonoBehaviour
     [SerializeField] private Button interactButton;
     [SerializeField] private TextMeshProUGUI interactText;
 
+    //------------- SHADOWS -------------
+    [SerializeField] private GameObject shooterShadow;
+    [SerializeField] private GameObject stunnerShadow;
+    [SerializeField] private GameObject knockerShadow;
+    private GameObject currentShadow;
+
     //------------- OTHERS -------------
     private BoxCollider2D laneCollider;
     private float centerY;
+
 
     private void Start()
     {
@@ -35,14 +42,14 @@ public class LaneBuilding : MonoBehaviour
             interactText.text = "Place Shooter";
             interactButtonUI.SetActive(true);
 
+            currentShadow = shooterShadow;
+            showShadow(currentShadow);
+
             interactButton.onClick.RemoveAllListeners();
             interactButton.onClick.AddListener(() => {
+                currentShadow = null;
                 pd.holdShooter = false;
-
-                float playerX = player.transform.position.x;
-                shooter.transform.position = new Vector3(playerX + 1f, centerY, 0f);
-
-                shooter.gameObject.SetActive(true);
+                placeObject(shooter);
             });
         }
         else if (col.CompareTag("Player") && pd.holdStunner)
@@ -50,15 +57,14 @@ public class LaneBuilding : MonoBehaviour
             interactText.text = "Place Stunner";
             interactButtonUI.SetActive(true);
 
+            currentShadow = stunnerShadow;
+            showShadow(currentShadow);
+
             interactButton.onClick.RemoveAllListeners();
             interactButton.onClick.AddListener(() => {
+                currentShadow = null;
                 pd.holdStunner = false;
-
-                float playerX = player.transform.position.x;
-                stunner.transform.position = new Vector3(playerX + 1f, centerY, 0f);
-
-                stunner.gameObject.SetActive(true);
-                
+                placeObject(stunner);
                 Stunner st = stunner.GetComponent<Stunner>();
                 st.stun();
             });
@@ -68,15 +74,14 @@ public class LaneBuilding : MonoBehaviour
             interactText.text = "Place Knocker";
             interactButtonUI.SetActive(true);
 
+            currentShadow = knockerShadow;
+            showShadow(currentShadow);
+
             interactButton.onClick.RemoveAllListeners();
             interactButton.onClick.AddListener(() => {
+                currentShadow = null;
                 pd.holdKnocker = false;
-
-                float playerX = player.transform.position.x;
-                knocker.transform.position = new Vector3(playerX + 1f, centerY, 0f);
-
-                knocker.gameObject.SetActive(true);
-
+                placeObject(knocker);
                 Knocker kn = knocker.GetComponent<Knocker>();
                 kn.knock();
             });
@@ -86,5 +91,24 @@ public class LaneBuilding : MonoBehaviour
     private void OnTriggerExit2D(Collider2D col)
     {
         interactButtonUI.SetActive(false);
+    }
+
+    private void showShadow(GameObject shadow)
+    {
+        if (currentShadow != shadow)
+        {
+            currentShadow = shadow;
+            currentShadow.SetActive(true);
+        }
+
+        float playerX = player.transform.position.x;
+        shadow.transform.position = new Vector3(playerX + 1f, centerY, 0f);
+    }
+
+    private void placeObject(GameObject obj)
+    {
+        float playerX = player.transform.position.x;
+        obj.transform.position = new Vector3(playerX + 1f, centerY, 0f);
+        obj.SetActive(true);
     }
 }

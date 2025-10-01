@@ -29,7 +29,6 @@ public class Shooter : MonoBehaviour
             interactText.text = "Took Shooter";
 
             interactButtonUI.SetActive(true);
-            upgradeButtonUI.SetActive(true);
 
             interactButton.onClick.RemoveAllListeners();
             interactButton.onClick.AddListener(() =>
@@ -38,11 +37,16 @@ public class Shooter : MonoBehaviour
                 this.gameObject.SetActive(false);
             });
 
-            upgradeButton.onClick.RemoveAllListeners();
-            upgradeButton.onClick.AddListener(() =>
+            if(pd.resource > 0)
             {
-                sd.level++;
-            });
+                upgradeButtonUI.SetActive(true);
+                upgradeButton.onClick.RemoveAllListeners();
+                upgradeButton.onClick.AddListener(() =>
+                {
+                    sd.level++;
+                    pd.resource--;
+                });
+            }
         }
     }
 
