@@ -138,7 +138,7 @@ TextureImporter:
       name: Coffee Walk-Sheet_1
       rect:
         serializedVersion: 2
-        x: 190
+        x: 200
         y: 0
         width: 190
         height: 330
@@ -160,7 +160,7 @@ TextureImporter:
       name: Coffee Walk-Sheet_2
       rect:
         serializedVersion: 2
-        x: 380
+        x: 400
         y: 0
         width: 190
         height: 330
@@ -182,7 +182,7 @@ TextureImporter:
       name: Coffee Walk-Sheet_3
       rect:
         serializedVersion: 2
-        x: 570
+        x: 600
         y: 0
         width: 190
         height: 330
@@ -204,7 +204,7 @@ TextureImporter:
       name: Coffee Walk-Sheet_4
       rect:
         serializedVersion: 2
-        x: 760
+        x: 800
         y: 0
         width: 190
         height: 330
@@ -226,7 +226,7 @@ TextureImporter:
       name: Coffee Walk-Sheet_5
       rect:
         serializedVersion: 2
-        x: 950
+        x: 1000
         y: 0
         width: 190
         height: 330
@@ -248,7 +248,7 @@ TextureImporter:
       name: Coffee Walk-Sheet_6
       rect:
         serializedVersion: 2
-        x: 1140
+        x: 1200
         y: 0
         width: 190
         height: 330
@@ -270,7 +270,7 @@ TextureImporter:
       name: Coffee Walk-Sheet_7
       rect:
         serializedVersion: 2
-        x: 1330
+        x: 1400
         y: 0
         width: 190
         height: 330
@@ -292,7 +292,7 @@ TextureImporter:
       name: Coffee Walk-Sheet_8
       rect:
         serializedVersion: 2
-        x: 1520
+        x: 1600
         y: 0
         width: 190
         height: 330
