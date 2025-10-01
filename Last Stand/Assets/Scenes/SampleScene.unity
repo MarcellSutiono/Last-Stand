@@ -1610,6 +1610,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cc60ac08a75d7e488e242665f9741ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnpoints: []
+  tungtung: {fileID: 0}
+  tungtungparent: {fileID: 0}
 --- !u!4 &1182134771
 Transform:
   m_ObjectHideFlags: 0
