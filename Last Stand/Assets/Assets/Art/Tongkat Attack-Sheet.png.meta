@@ -143,9 +143,9 @@ TextureImporter:
       name: Tongkat Attack-Sheet_0
       rect:
         serializedVersion: 2
-        x: 49
+        x: 0
         y: 0
-        width: 232
+        width: 290
         height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -165,9 +165,9 @@ TextureImporter:
       name: Tongkat Attack-Sheet_1
       rect:
         serializedVersion: 2
-        x: 299
+        x: 290
         y: 0
-        width: 272
+        width: 290
         height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -187,9 +187,9 @@ TextureImporter:
       name: Tongkat Attack-Sheet_2
       rect:
         serializedVersion: 2
-        x: 579
+        x: 580
         y: 0
-        width: 282
+        width: 290
         height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -209,9 +209,9 @@ TextureImporter:
       name: Tongkat Attack-Sheet_3
       rect:
         serializedVersion: 2
-        x: 879
+        x: 870
         y: 0
-        width: 272
+        width: 290
         height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -231,9 +231,9 @@ TextureImporter:
       name: Tongkat Attack-Sheet_4
       rect:
         serializedVersion: 2
-        x: 1179
+        x: 1160
         y: 0
-        width: 262
+        width: 290
         height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -253,9 +253,9 @@ TextureImporter:
       name: Tongkat Attack-Sheet_5
       rect:
         serializedVersion: 2
-        x: 1479
+        x: 1450
         y: 0
-        width: 252
+        width: 290
         height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -275,9 +275,9 @@ TextureImporter:
       name: Tongkat Attack-Sheet_6
       rect:
         serializedVersion: 2
-        x: 1789
+        x: 1740
         y: 0
-        width: 232
+        width: 290
         height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -297,9 +297,9 @@ TextureImporter:
       name: Tongkat Attack-Sheet_7
       rect:
         serializedVersion: 2
-        x: 2119
+        x: 2030
         y: 0
-        width: 192
+        width: 290
         height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -319,10 +319,10 @@ TextureImporter:
       name: Tongkat Attack-Sheet_8
       rect:
         serializedVersion: 2
-        x: 2359
+        x: 2320
         y: 0
-        width: 252
-        height: 311
+        width: 290
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -341,10 +341,10 @@ TextureImporter:
       name: Tongkat Attack-Sheet_9
       rect:
         serializedVersion: 2
-        x: 2659
+        x: 2610
         y: 0
-        width: 232
-        height: 311
+        width: 290
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -363,7 +363,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: fd4c62443634e3d4f9087f1a3870a731
     internalID: 0
     vertices: []
     indices: 

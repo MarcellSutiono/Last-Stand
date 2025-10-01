@@ -161,10 +161,10 @@ TextureImporter:
       name: Newton_0
       rect:
         serializedVersion: 2
-        x: 139
-        y: 1519
-        width: 202
-        height: 452
+        x: 0
+        y: 1418
+        width: 290
+        height: 472
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,10 +183,10 @@ TextureImporter:
       name: Newton_1
       rect:
         serializedVersion: 2
-        x: 459
-        y: 1509
-        width: 202
-        height: 462
+        x: 290
+        y: 1418
+        width: 290
+        height: 472
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,10 +205,10 @@ TextureImporter:
       name: Newton_2
       rect:
         serializedVersion: 2
-        x: 779
-        y: 1519
-        width: 202
-        height: 452
+        x: 580
+        y: 1418
+        width: 290
+        height: 472
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,10 +227,10 @@ TextureImporter:
       name: Newton_3
       rect:
         serializedVersion: 2
-        x: 1099
-        y: 1509
-        width: 202
-        height: 462
+        x: 870
+        y: 1418
+        width: 290
+        height: 472
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -249,10 +249,10 @@ TextureImporter:
       name: Newton_4
       rect:
         serializedVersion: 2
-        x: 139
-        y: 1039
-        width: 202
-        height: 452
+        x: 0
+        y: 946
+        width: 290
+        height: 472
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,9 +271,9 @@ TextureImporter:
       name: Newton_5
       rect:
         serializedVersion: 2
-        x: 459
-        y: 1019
-        width: 202
+        x: 290
+        y: 946
+        width: 290
         height: 472
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -293,10 +293,10 @@ TextureImporter:
       name: Newton_6
       rect:
         serializedVersion: 2
-        x: 779
-        y: 1039
-        width: 202
-        height: 452
+        x: 580
+        y: 946
+        width: 290
+        height: 472
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -315,9 +315,9 @@ TextureImporter:
       name: Newton_7
       rect:
         serializedVersion: 2
-        x: 1099
-        y: 1019
-        width: 202
+        x: 870
+        y: 946
+        width: 290
         height: 472
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -337,10 +337,10 @@ TextureImporter:
       name: Newton_8
       rect:
         serializedVersion: 2
-        x: 139
-        y: 559
-        width: 172
-        height: 452
+        x: 0
+        y: 474
+        width: 290
+        height: 472
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -359,10 +359,10 @@ TextureImporter:
       name: Newton_9
       rect:
         serializedVersion: 2
-        x: 469
-        y: 559
-        width: 182
-        height: 452
+        x: 290
+        y: 474
+        width: 290
+        height: 472
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -381,10 +381,10 @@ TextureImporter:
       name: Newton_10
       rect:
         serializedVersion: 2
-        x: 789
-        y: 559
-        width: 172
-        height: 452
+        x: 580
+        y: 474
+        width: 290
+        height: 472
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -403,10 +403,10 @@ TextureImporter:
       name: Newton_11
       rect:
         serializedVersion: 2
-        x: 1109
-        y: 559
-        width: 182
-        height: 452
+        x: 870
+        y: 474
+        width: 290
+        height: 472
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -425,10 +425,10 @@ TextureImporter:
       name: Newton_12
       rect:
         serializedVersion: 2
-        x: 159
-        y: 79
-        width: 172
-        height: 452
+        x: 0
+        y: 2
+        width: 290
+        height: 472
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -447,10 +447,10 @@ TextureImporter:
       name: Newton_13
       rect:
         serializedVersion: 2
-        x: 469
-        y: 79
-        width: 182
-        height: 452
+        x: 290
+        y: 2
+        width: 290
+        height: 472
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -469,10 +469,10 @@ TextureImporter:
       name: Newton_14
       rect:
         serializedVersion: 2
-        x: 799
-        y: 79
-        width: 172
-        height: 452
+        x: 580
+        y: 2
+        width: 290
+        height: 472
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -491,10 +491,10 @@ TextureImporter:
       name: Newton_15
       rect:
         serializedVersion: 2
-        x: 1109
-        y: 79
-        width: 182
-        height: 452
+        x: 870
+        y: 2
+        width: 290
+        height: 472
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -513,7 +513,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d7d004bb7a7e79c49b05c740874b09e0
     internalID: 0
     vertices: []
     indices: 

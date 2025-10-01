@@ -9,12 +9,17 @@ public class Shooter : MonoBehaviour
 
     //------------- BUTTONS -------------
     [SerializeField] private GameObject interactButtonUI;
+    [SerializeField] private GameObject upgradeButtonUI;
+
     [SerializeField] private Button interactButton;
+    [SerializeField] private Button upgradeButton;
+
     [SerializeField] private TextMeshProUGUI interactText;
 
     //------------- SHOOTER -------------
     [SerializeField] private ShooterData sd;
     [SerializeField] private GameObject bullet;
+    [SerializeField] private TextMeshProUGUI levelIndicator;
     private float shootTimer = 0;
 
     private void OnTriggerStay2D(Collider2D col)
@@ -22,7 +27,9 @@ public class Shooter : MonoBehaviour
         if (col.CompareTag("Player") && (!pd.holdStunner && !pd.holdKnocker))
         {
             interactText.text = "Took Shooter";
+
             interactButtonUI.SetActive(true);
+            upgradeButtonUI.SetActive(true);
 
             interactButton.onClick.RemoveAllListeners();
             interactButton.onClick.AddListener(() =>
@@ -30,18 +37,26 @@ public class Shooter : MonoBehaviour
                 pd.holdShooter = true;
                 this.gameObject.SetActive(false);
             });
+
+            upgradeButton.onClick.RemoveAllListeners();
+            upgradeButton.onClick.AddListener(() =>
+            {
+                sd.level++;
+            });
         }
     }
 
     private void OnTriggerExit2D(Collider2D col)
     {
         interactButtonUI.SetActive(false);
+        upgradeButtonUI.SetActive(false);
     }
 
     private void Update()
     {
-        
         shooting();
+
+        levelIndicator.text = sd.level.ToString();
     }
 
     private void shooting()
@@ -52,7 +67,21 @@ public class Shooter : MonoBehaviour
             if (shootTimer >= sd.shootDelay)
             {
                 shootTimer = 0;
-                Instantiate(bullet, transform.position, Quaternion.identity);
+
+                GameObject bulletGameObject = Instantiate(bullet, transform.position, Quaternion.identity);
+
+                if (sd.level == 1)
+                {
+                    bullet.gameObject.GetComponent<SpriteRenderer>().color = Color.white;
+                }
+                else if (sd.level >= 2)
+                {
+                    Color customColor;
+                    if (ColorUtility.TryParseHtmlString("#FF3939", out customColor))
+                    {
+                        bullet.gameObject.GetComponent<SpriteRenderer>().color = customColor;
+                    }
+                }
             }
         }
     }

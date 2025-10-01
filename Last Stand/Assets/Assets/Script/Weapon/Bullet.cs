@@ -2,10 +2,11 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    private float speed = 5f;
+    private float speed = 8f;
+    public ShooterData sd;
     void Start()
     {
-        
+
     }
 
     void Update()

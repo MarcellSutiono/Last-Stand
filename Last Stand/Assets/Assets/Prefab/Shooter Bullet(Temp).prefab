@@ -80,7 +80,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -3516461229758064296, guid: 5496926a6be58dd4d90c5e455ffe2d39, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.22352941, b: 0.22352941, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -102,6 +102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d80237c3c33f3e940bcb3b67febfceaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sd: {fileID: 11400000, guid: a8349b994e0a1744e8830b1b53995d03, type: 2}
 --- !u!70 &7159545253362922671
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -132,12 +133,12 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.10408808, y: -0.71520734}
-  m_Size: {x: 10.817102, y: 21.329344}
+  m_Offset: {x: 1.6960495, y: -0.3443631}
+  m_Size: {x: 7.2168245, y: 14.230255}
   m_Direction: 0
 --- !u!50 &5661118425680775808
 Rigidbody2D:

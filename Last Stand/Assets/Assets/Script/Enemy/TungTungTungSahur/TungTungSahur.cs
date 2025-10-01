@@ -7,12 +7,18 @@ public class TungTungSahur : MonoBehaviour
     public bool isStunned = false;
     private float attackTimer = 0f;
     private float stunTimer = 0f;
+    private Animator anim;
 
     [SerializeField] private PlayerData pd;
     [SerializeField] private TungTungTungSahurData ttsd;
     [SerializeField] private ShooterData shd;
     [SerializeField] private StunnerData std;
 
+    private void Start()
+    {
+        anim = GetComponent<Animator>();
+    }
+    
     private void Update()
     {
         deathChecker();
@@ -45,7 +51,14 @@ public class TungTungSahur : MonoBehaviour
     {
         if (col.CompareTag("Bullet"))
         {
-            health--;
+            if(shd.level == 1)
+            {
+                health--;
+            }
+            else if(shd.level >= 2)
+            {
+                health-=2;
+            }
             Destroy(col.gameObject);
         }
     }
@@ -84,18 +97,20 @@ public class TungTungSahur : MonoBehaviour
     {
         if (attackTimer >= ttsd.attackCooldown)
         {
+            anim.SetTrigger("Attack");
+
             if (weapon.CompareTag("Shooter"))
             {
                 shd.health--;
-                attackTimer = 0;
                 Debug.Log(shd.health);
             }
             else if (weapon.CompareTag("Stunner"))
             {
                 std.health--;
-                attackTimer = 0;
                 Debug.Log(std.health);
             }
+
+            attackTimer = 0f;
         }
     }
 }

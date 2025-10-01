@@ -45,7 +45,14 @@ public class CappuccinoAssasino : MonoBehaviour
     {
         if (col.CompareTag("Bullet"))
         {
-            health--;
+            if (shd.level == 1)
+            {
+                health--;
+            }
+            else if (shd.level >= 2)
+            {
+                health -= 2;
+            }
             Destroy(col.gameObject);
         }
     }
