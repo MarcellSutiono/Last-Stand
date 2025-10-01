@@ -1,55 +1,43 @@
 fileFormatVersion: 2
-guid: b8778c515013b3246821b2be848c8421
+guid: 6027f12e82f29644e8624d48eee1d6d9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2043073133013973665
-    second: Newton_0
+      213: -5936458412109121763
+    second: Newton Attack-Sheet_0
   - first:
-      213: 7134118014542897850
-    second: Newton_1
+      213: -6459432408016149996
+    second: Newton Attack-Sheet_1
   - first:
-      213: -7643399191228352325
-    second: Newton_2
+      213: 5368676550980650291
+    second: Newton Attack-Sheet_2
   - first:
-      213: -6910625214794585846
-    second: Newton_3
+      213: -4907109251703427458
+    second: Newton Attack-Sheet_3
   - first:
-      213: -3292872395861415511
-    second: Newton_4
+      213: -8204289881726684541
+    second: Newton Attack-Sheet_4
   - first:
-      213: -5319144728348261281
-    second: Newton_5
+      213: 3442738089773076368
+    second: Newton Attack-Sheet_5
   - first:
-      213: -1478760935866619855
-    second: Newton_6
+      213: 3541335706543416322
+    second: Newton Attack-Sheet_6
   - first:
-      213: -1707196697065458210
-    second: Newton_7
+      213: -4427785747947320846
+    second: Newton Attack-Sheet_7
   - first:
-      213: -944844907782047897
-    second: Newton_8
+      213: -121728111494756008
+    second: Newton Attack-Sheet_8
   - first:
-      213: -1016672302070521834
-    second: Newton_9
+      213: -1209218284410496198
+    second: Newton Attack-Sheet_9
   - first:
-      213: 6828149412549990010
-    second: Newton_10
+      213: -6848322766494179257
+    second: Newton Attack-Sheet_10
   - first:
-      213: -8453218505481976667
-    second: Newton_11
-  - first:
-      213: 8078585855696062561
-    second: Newton_12
-  - first:
-      213: 8059894386675312945
-    second: Newton_13
-  - first:
-      213: -4680216616970958022
-    second: Newton_14
-  - first:
-      213: -8626699259851560042
-    second: Newton_15
+      213: 4012698193471352100
+    second: Newton Attack-Sheet_11
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -158,188 +146,144 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Newton_0
+      name: Newton Attack-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 1370
-        width: 210
-        height: 460
+        y: 1440
+        width: 290
+        height: 450
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f55ce886fcb85a3e0800000000000000
-      internalID: -2043073133013973665
+      spriteID: eb3b2e1886e004c40be128be68ec0ac9
+      internalID: 1034655112
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Newton_1
+      name: Newton Attack-Sheet_1
       rect:
         serializedVersion: 2
-        x: 210
-        y: 1370
-        width: 200
-        height: 460
+        x: 290
+        y: 1440
+        width: 290
+        height: 450
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ab26b8a398a710360800000000000000
-      internalID: 7134118014542897850
+      spriteID: 733bba97c3e49274ab54f0959e6b97a8
+      internalID: 1263706132
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Newton_2
+      name: Newton Attack-Sheet_2
       rect:
         serializedVersion: 2
-        x: 410
-        y: 1370
-        width: 200
-        height: 460
+        x: 580
+        y: 1440
+        width: 290
+        height: 450
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: bb8735a9ee03de590800000000000000
-      internalID: -7643399191228352325
+      spriteID: a6b741450803106419a569e02634c521
+      internalID: -1411273715
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Newton_3
-      rect:
-        serializedVersion: 2
-        x: 610
-        y: 1370
-        width: 210
-        height: 460
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a09af403bf68810a0800000000000000
-      internalID: -6910625214794585846
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Newton_4
+      name: Newton Attack-Sheet_3
       rect:
         serializedVersion: 2
         x: 0
-        y: 900
-        width: 210
-        height: 470
+        y: 960
+        width: 290
+        height: 450
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9a9adf9900e5d42d0800000000000000
-      internalID: -3292872395861415511
+      spriteID: 98d7c9b2b2b7c7744a435650d73523a4
+      internalID: -340335225
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Newton_5
+      name: Newton Attack-Sheet_4
       rect:
         serializedVersion: 2
-        x: 210
-        y: 900
-        width: 200
-        height: 470
+        x: 290
+        y: 960
+        width: 290
+        height: 450
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f5409e53d0a9e26b0800000000000000
-      internalID: -5319144728348261281
+      spriteID: 98d7eb5307e5c3c4ab25a2aa46cbd51f
+      internalID: 1126852315
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Newton_6
+      name: Newton Attack-Sheet_5
       rect:
         serializedVersion: 2
-        x: 410
-        y: 900
-        width: 200
-        height: 470
+        x: 580
+        y: 960
+        width: 290
+        height: 450
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 13822fd73c26a7be0800000000000000
-      internalID: -1478760935866619855
+      spriteID: 23c56833ae79f334bbf54149fdc4bf8b
+      internalID: -715607360
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Newton_7
-      rect:
-        serializedVersion: 2
-        x: 610
-        y: 900
-        width: 210
-        height: 470
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ed571bd26a1de48e0800000000000000
-      internalID: -1707196697065458210
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Newton_8
+      name: Newton Attack-Sheet_6
       rect:
         serializedVersion: 2
         x: 0
-        y: 450
-        width: 210
+        y: 480
+        width: 290
         height: 450
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -347,21 +291,21 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 76770d7ff8c33e2f0800000000000000
-      internalID: -944844907782047897
+      spriteID: 050586d4c163992409590ecc362cb484
+      internalID: 1203023359
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Newton_9
+      name: Newton Attack-Sheet_7
       rect:
         serializedVersion: 2
-        x: 210
-        y: 450
-        width: 200
+        x: 290
+        y: 480
+        width: 290
         height: 450
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -369,21 +313,21 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 610ab168ded04e1f0800000000000000
-      internalID: -1016672302070521834
+      spriteID: 118153ecad205c94fbcbbdc54c8af583
+      internalID: 1984311888
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Newton_10
+      name: Newton Attack-Sheet_8
       rect:
         serializedVersion: 2
-        x: 410
-        y: 450
-        width: 200
+        x: 580
+        y: 480
+        width: 290
         height: 450
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -391,120 +335,76 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a769550b6b572ce50800000000000000
-      internalID: 6828149412549990010
+      spriteID: dcc32c46d87949449a6c60567f764819
+      internalID: 899925998
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Newton_11
-      rect:
-        serializedVersion: 2
-        x: 610
-        y: 450
-        width: 210
-        height: 450
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5a40dfb6e8220ba80800000000000000
-      internalID: -8453218505481976667
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Newton_12
+      name: Newton Attack-Sheet_9
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 210
-        height: 450
+        y: 2
+        width: 290
+        height: 448
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 16842489807ec1070800000000000000
-      internalID: 8078585855696062561
+      spriteID: c9af99208b2c66048908c999e6dddcc3
+      internalID: -813456062
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Newton_13
+      name: Newton Attack-Sheet_10
       rect:
         serializedVersion: 2
-        x: 210
-        y: 0
-        width: 200
-        height: 450
+        x: 290
+        y: 2
+        width: 290
+        height: 448
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 13962f4dd3f7adf60800000000000000
-      internalID: 8059894386675312945
+      spriteID: db3f49af1b17f864c9cd1e7f775bad01
+      internalID: 2063198579
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Newton_14
+      name: Newton Attack-Sheet_11
       rect:
         serializedVersion: 2
-        x: 410
-        y: 0
-        width: 200
-        height: 450
+        x: 580
+        y: 2
+        width: 290
+        height: 448
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a3bc091a8c78c0fb0800000000000000
-      internalID: -4680216616970958022
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Newton_15
-      rect:
-        serializedVersion: 2
-        x: 610
-        y: 0
-        width: 210
-        height: 450
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 69b2c68babec74880800000000000000
-      internalID: -8626699259851560042
+      spriteID: 84e883dfd4d6b1e419866bca6cc7d0a1
+      internalID: -846173386
       vertices: []
       indices: 
       edges: []
@@ -513,7 +413,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: c6edf119b71ffae4ca653d92e3b54c7b
+    spriteID: 2c08622066d9fb444af1cb5b95b9cede
     internalID: 0
     vertices: []
     indices: 
@@ -523,22 +423,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Newton_0: -2043073133013973665
-      Newton_1: 7134118014542897850
-      Newton_10: 6828149412549990010
-      Newton_11: -8453218505481976667
-      Newton_12: 8078585855696062561
-      Newton_13: 8059894386675312945
-      Newton_14: -4680216616970958022
-      Newton_15: -8626699259851560042
-      Newton_2: -7643399191228352325
-      Newton_3: -6910625214794585846
-      Newton_4: -3292872395861415511
-      Newton_5: -5319144728348261281
-      Newton_6: -1478760935866619855
-      Newton_7: -1707196697065458210
-      Newton_8: -944844907782047897
-      Newton_9: -1016672302070521834
+      Newton Attack-Sheet_0: 1034655112
+      Newton Attack-Sheet_1: 1263706132
+      Newton Attack-Sheet_10: 2063198579
+      Newton Attack-Sheet_11: -846173386
+      Newton Attack-Sheet_2: -1411273715
+      Newton Attack-Sheet_3: -340335225
+      Newton Attack-Sheet_4: 1126852315
+      Newton Attack-Sheet_5: -715607360
+      Newton Attack-Sheet_6: 1203023359
+      Newton Attack-Sheet_7: 1984311888
+      Newton Attack-Sheet_8: 899925998
+      Newton Attack-Sheet_9: -813456062
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
