@@ -27,7 +27,7 @@ public class LaneBuilding : MonoBehaviour
     //------------- OTHERS -------------
     private BoxCollider2D laneCollider;
     private float centerY;
-
+    public AudioManager am;
 
     private void Start()
     {
@@ -47,6 +47,7 @@ public class LaneBuilding : MonoBehaviour
 
             interactButton.onClick.RemoveAllListeners();
             interactButton.onClick.AddListener(() => {
+                am.playSFX(am.placeTowerSFX);
                 currentShadow = null;
                 pd.holdShooter = false;
                 placeObject(shooter);
@@ -62,6 +63,7 @@ public class LaneBuilding : MonoBehaviour
 
             interactButton.onClick.RemoveAllListeners();
             interactButton.onClick.AddListener(() => {
+                am.playSFX(am.placeTowerSFX);
                 currentShadow = null;
                 pd.holdStunner = false;
                 placeObject(stunner);
@@ -79,6 +81,7 @@ public class LaneBuilding : MonoBehaviour
 
             interactButton.onClick.RemoveAllListeners();
             interactButton.onClick.AddListener(() => {
+                am.playSFX(am.placeTowerSFX);
                 currentShadow = null;
                 pd.holdKnocker = false;
                 placeObject(knocker);

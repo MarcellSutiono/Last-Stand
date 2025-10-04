@@ -69,7 +69,7 @@ public class Knocker : MonoBehaviour
             for (int i = 0; i < cappuccinoParent.transform.childCount; i++)
             {
                 GameObject tts = cappuccinoParent.transform.GetChild(i).gameObject;
-                CappuccinoAssasino caScript = tts.GetComponent<CappuccinoAssasino>();
+                BallerinaCappuccina caScript = tts.GetComponent<BallerinaCappuccina>();
                 if (caScript.isActiveAndEnabled)
                 {
                     caScript.knockCappuccino(5f);

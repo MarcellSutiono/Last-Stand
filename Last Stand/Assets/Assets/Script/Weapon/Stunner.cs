@@ -20,6 +20,7 @@ public class Stunner : MonoBehaviour
     [SerializeField] private Image flashImage;
     [SerializeField] private float flashSpeed = 0.5f;
     private Animator anim;
+    public AudioManager am;
     private float stunTimer = 0f;
     public TextMeshProUGUI levelIndicator;
 
@@ -33,6 +34,7 @@ public class Stunner : MonoBehaviour
             interactButton.onClick.RemoveAllListeners();
             interactButton.onClick.AddListener(() =>
             {
+                am.playSFX(am.pickTowerSFX);
                 pd.holdStunner = true;
                 this.gameObject.SetActive(false);
             });
@@ -58,6 +60,7 @@ public class Stunner : MonoBehaviour
     {
         if(stunTimer >= std.stunCooldown && !pd.holdStunner)
         {
+            am.playSFX(am.flashSFX);
             flash();
             anim.SetTrigger("Stun");
             stunTimer = 0f;
@@ -75,7 +78,7 @@ public class Stunner : MonoBehaviour
             for (int i = 0; i < cappucinoParent.transform.childCount; i++)
             {
                 GameObject ca = cappucinoParent.transform.GetChild(i).gameObject;
-                CappuccinoAssasino caScript = ca.GetComponent<CappuccinoAssasino>();
+                BallerinaCappuccina caScript = ca.GetComponent<BallerinaCappuccina>();
                 if (caScript.isActiveAndEnabled)
                 {
                     caScript.stunCappuccino(2f);

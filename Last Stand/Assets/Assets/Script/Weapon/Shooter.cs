@@ -22,6 +22,9 @@ public class Shooter : MonoBehaviour
     [SerializeField] private TextMeshProUGUI levelIndicator;
     private float shootTimer = 0;
 
+    //------------- SHOOTER -------------
+    public AudioManager am;
+
     private void OnTriggerStay2D(Collider2D col)
     {
         if (col.CompareTag("Player") && (!pd.holdStunner && !pd.holdKnocker))
@@ -33,6 +36,7 @@ public class Shooter : MonoBehaviour
             interactButton.onClick.RemoveAllListeners();
             interactButton.onClick.AddListener(() =>
             {
+                am.playSFX(am.pickTowerSFX);
                 pd.holdShooter = true;
                 this.gameObject.SetActive(false);
             });
@@ -65,12 +69,14 @@ public class Shooter : MonoBehaviour
 
     private void shooting()
     {
-        if (!pd.holdShooter)
+        if (!pd.holdShooter && sd.enemyInsight)
         {
             shootTimer += Time.deltaTime;
             if (shootTimer >= sd.shootDelay)
             {
                 shootTimer = 0;
+
+                am.playSFX(am.zapSFX);
 
                 GameObject bulletGameObject = Instantiate(bullet, transform.position + new Vector3(1f, 1.25f, 0), Quaternion.identity);
 

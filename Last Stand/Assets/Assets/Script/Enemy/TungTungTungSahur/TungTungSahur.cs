@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class TungTungSahur : MonoBehaviour
 {
-    private int health = 2;
+    public int health = 2;
     public bool isAttacking = false;
     public bool isStunned = false;
     private float attackTimer = 0f;
@@ -47,21 +47,27 @@ public class TungTungSahur : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D col)
-    {
-        if (col.CompareTag("Bullet"))
-        {
-            if(shd.level == 1)
-            {
-                health--;
-            }
-            else if(shd.level >= 2)
-            {
-                health-=2;
-            }
-            Destroy(col.gameObject);
-        }
-    }
+    //private void OnTriggerEnter2D(Collider2D col)
+    //{
+    //    if (col.CompareTag("Bullet"))
+    //    {
+    //        if(shd.level == 1)
+    //        {
+    //            health--;
+    //            Destroy(col.gameObject);
+    //        }
+    //        else if(shd.level == 2)
+    //        {
+    //            health -=2;
+    //            Destroy(col.gameObject);
+    //        }
+    //        else if(shd.level == 3)
+    //        {
+    //            health -= 2;
+    //            Destroy(col.gameObject);
+    //        }
+    //    }
+    //}
 
     private void attackStopwatch()
     {
