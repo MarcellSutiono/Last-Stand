@@ -13,4 +13,10 @@ MonoBehaviour:
   m_Name: PlayerData
   m_EditorClassIdentifier: 
   playerSpeed: 8.5
-  holdShooter: 1
+  holdShooter: 0
+  holdStunner: 0
+  holdKnocker: 0
+  exp: 30
+  level: 1
+  expNeeded: 130
+  resource: 0

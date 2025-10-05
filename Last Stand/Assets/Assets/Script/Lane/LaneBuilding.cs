@@ -7,6 +7,7 @@ public class LaneBuilding : MonoBehaviour
     //------------- WEAPONS -------------
     [SerializeField] private GameObject shooter;
     [SerializeField] private GameObject stunner;
+    [SerializeField] private GameObject knocker;
 
     //------------- PLAYER --------------
     [SerializeField] private PlayerData pd;
@@ -17,14 +18,21 @@ public class LaneBuilding : MonoBehaviour
     [SerializeField] private Button interactButton;
     [SerializeField] private TextMeshProUGUI interactText;
 
+    //------------- SHADOWS -------------
+    [SerializeField] private GameObject shooterShadow;
+    [SerializeField] private GameObject stunnerShadow;
+    [SerializeField] private GameObject knockerShadow;
+    private GameObject currentShadow;
+
     //------------- OTHERS -------------
     private BoxCollider2D laneCollider;
     private float centerY;
+    public AudioManager am;
 
     private void Start()
     {
         laneCollider = gameObject.GetComponent<BoxCollider2D>();
-        centerY = laneCollider.bounds.center.y;
+        centerY = laneCollider.bounds.min.y + 0.5f;
     }
 
     private void OnTriggerStay2D(Collider2D col)
@@ -34,14 +42,15 @@ public class LaneBuilding : MonoBehaviour
             interactText.text = "Place Shooter";
             interactButtonUI.SetActive(true);
 
+            currentShadow = shooterShadow;
+            showShadow(currentShadow);
+
             interactButton.onClick.RemoveAllListeners();
             interactButton.onClick.AddListener(() => {
+                am.playSFX(am.placeTowerSFX);
+                currentShadow = null;
                 pd.holdShooter = false;
-
-                float playerX = player.transform.position.x;
-                shooter.transform.position = new Vector3(playerX + 1f, centerY, 0f);
-
-                shooter.gameObject.SetActive(true);
+                placeObject(shooter);
             });
         }
         else if (col.CompareTag("Player") && pd.holdStunner)
@@ -49,17 +58,35 @@ public class LaneBuilding : MonoBehaviour
             interactText.text = "Place Stunner";
             interactButtonUI.SetActive(true);
 
+            currentShadow = stunnerShadow;
+            showShadow(currentShadow);
+
             interactButton.onClick.RemoveAllListeners();
             interactButton.onClick.AddListener(() => {
+                am.playSFX(am.placeTowerSFX);
+                currentShadow = null;
                 pd.holdStunner = false;
-
-                float playerX = player.transform.position.x;
-                stunner.transform.position = new Vector3(playerX + 1f, centerY, 0f);
-
-                stunner.gameObject.SetActive(true);
-                
+                placeObject(stunner);
                 Stunner st = stunner.GetComponent<Stunner>();
                 st.stun();
+            });
+        }
+        else if (col.CompareTag("Player") && pd.holdKnocker)
+        {
+            interactText.text = "Place Knocker";
+            interactButtonUI.SetActive(true);
+
+            currentShadow = knockerShadow;
+            showShadow(currentShadow);
+
+            interactButton.onClick.RemoveAllListeners();
+            interactButton.onClick.AddListener(() => {
+                am.playSFX(am.placeTowerSFX);
+                currentShadow = null;
+                pd.holdKnocker = false;
+                placeObject(knocker);
+                Knocker kn = knocker.GetComponent<Knocker>();
+                kn.knock();
             });
         }
     }
@@ -67,5 +94,24 @@ public class LaneBuilding : MonoBehaviour
     private void OnTriggerExit2D(Collider2D col)
     {
         interactButtonUI.SetActive(false);
+    }
+
+    private void showShadow(GameObject shadow)
+    {
+        if (currentShadow != shadow)
+        {
+            currentShadow = shadow;
+            currentShadow.SetActive(true);
+        }
+
+        float playerX = player.transform.position.x;
+        shadow.transform.position = new Vector3(playerX + 1f, centerY, 0f);
+    }
+
+    private void placeObject(GameObject obj)
+    {
+        float playerX = player.transform.position.x;
+        obj.transform.position = new Vector3(playerX + 1f, centerY, 0f);
+        obj.SetActive(true);
     }
 }

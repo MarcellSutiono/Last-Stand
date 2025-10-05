@@ -1,3 +1,4 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,11 +14,17 @@ public class Stunner : MonoBehaviour
     [SerializeField] private TextMeshProUGUI interactText;
 
     //------------- Stunner -------------
-    [SerializeField] private float stunCooldown = 2f;
-    [SerializeField] private GameObject tungTungSahur;
+    [SerializeField] private GameObject tungTungSahurParent;
+    [SerializeField] private GameObject cappucinoParent;
+    [SerializeField] private StunnerData std;
+    [SerializeField] private Image flashImage;
+    [SerializeField] private float flashSpeed = 0.5f;
+    private Animator anim;
+    public AudioManager am;
     private float stunTimer = 0f;
+    public TextMeshProUGUI levelIndicator;
 
-    private void OnTriggerEnter2D(Collider2D col)
+    private void OnTriggerStay2D(Collider2D col)
     {
         if (col.CompareTag("Player") && (!pd.holdShooter && !pd.holdKnocker))
         {
@@ -27,6 +34,7 @@ public class Stunner : MonoBehaviour
             interactButton.onClick.RemoveAllListeners();
             interactButton.onClick.AddListener(() =>
             {
+                am.playSFX(am.pickTowerSFX);
                 pd.holdStunner = true;
                 this.gameObject.SetActive(false);
             });
@@ -38,20 +46,28 @@ public class Stunner : MonoBehaviour
         interactButtonUI.SetActive(false);
     }
 
+    private void Start()
+    {
+        anim = GetComponent<Animator>();
+    }
     private void Update()
     {
         stunTimer += Time.deltaTime;
+        levelIndicator.text = std.level.ToString();
     }
 
     public void stun()
     {
-        if(stunTimer >= stunCooldown && !pd.holdStunner)
+        if(stunTimer >= std.stunCooldown && !pd.holdStunner)
         {
+            am.playSFX(am.flashSFX);
+            flash();
+            anim.SetTrigger("Stun");
             stunTimer = 0f;
 
-            for (int i = 0; i < tungTungSahur.transform.childCount; i++)
+            for (int i = 0; i < tungTungSahurParent.transform.childCount; i++)
             {
-                GameObject tts = tungTungSahur.transform.GetChild(i).gameObject;
+                GameObject tts = tungTungSahurParent.transform.GetChild(i).gameObject;
                 TungTungSahur ttsScript = tts.GetComponent<TungTungSahur>();
                 if (ttsScript.isActiveAndEnabled)
                 {
@@ -59,7 +75,35 @@ public class Stunner : MonoBehaviour
                 }
             }
 
+            for (int i = 0; i < cappucinoParent.transform.childCount; i++)
+            {
+                GameObject ca = cappucinoParent.transform.GetChild(i).gameObject;
+                BallerinaCappuccina caScript = ca.GetComponent<BallerinaCappuccina>();
+                if (caScript.isActiveAndEnabled)
+                {
+                    caScript.stunCappuccino(2f);
+                }
+            }
         }
     }
 
+    private void flash()
+    {
+        StartCoroutine(FlashCoroutine());
+    }
+
+    private IEnumerator FlashCoroutine()
+    {
+        for (float t = 0; t < 1; t += Time.deltaTime / flashSpeed)
+        {
+            flashImage.color = new Color(1, 1, 1, Mathf.Lerp(0, 1, t));
+            yield return null;
+        }
+
+        for (float t = 0; t < 1; t += Time.deltaTime / flashSpeed)
+        {
+            flashImage.color = new Color(1, 1, 1, Mathf.Lerp(1, 0, t));
+            yield return null;
+        }
+    }
 }

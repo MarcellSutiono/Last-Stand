@@ -8,11 +8,13 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private PlayerInputSystem input;
     private Vector2 moveValue;
+    private Animator anim;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         input = new PlayerInputSystem();
+        anim = GetComponent<Animator>();
     }
 
     private void OnEnable()
@@ -33,6 +35,18 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         moveValue = input.Player.Move.ReadValue<Vector2>();
+        if(moveValue != Vector2.zero)
+        {
+            anim.SetBool("isWalking", true);
+            anim.SetFloat("InputX", moveValue.x);
+            anim.SetFloat("InputY", moveValue.y);
+        }
+        else
+        {
+            anim.SetBool("isWalking", false);
+            anim.SetFloat("InputX", 0);
+            anim.SetFloat("InputY", 0);
+        }
         move();
     }
 
