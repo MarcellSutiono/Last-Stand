@@ -8,11 +8,13 @@ TagManager:
   - Shooter
   - Stunner
   - Knocker
+  - TungTung
+  - Ballerina
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Enemy
   - Water
   - UI
   - 

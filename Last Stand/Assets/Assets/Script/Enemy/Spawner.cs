@@ -19,15 +19,19 @@ public class Spawner : MonoBehaviour
         int r = Random.Range(0, spawnpoints.Length);
 
         int randomizeEnemy = Random.Range(0, 2);
-        if(randomizeEnemy == 0)
+        if (randomizeEnemy == 0)
         {
             GameObject Tungtung = Instantiate(tungtung, spawnpoints[r].position, Quaternion.identity);
             Tungtung.transform.parent = tungtungParent.transform;
+            int enemyLayer = LayerMask.NameToLayer("Enemy");
+            Tungtung.layer = enemyLayer;
         }
         else
         {
             GameObject Cappuccino = Instantiate(cappuccino, spawnpoints[r].position, Quaternion.identity);
             Cappuccino.transform.parent = cappuccinoParent.transform;
+            int enemyLayer = LayerMask.NameToLayer("Enemy");
+            Cappuccino.layer = enemyLayer;
         }
     }
 }

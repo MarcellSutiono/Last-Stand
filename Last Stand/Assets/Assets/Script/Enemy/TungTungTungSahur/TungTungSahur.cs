@@ -18,7 +18,7 @@ public class TungTungSahur : MonoBehaviour
     {
         anim = GetComponent<Animator>();
     }
-    
+
     private void Update()
     {
         deathChecker();
@@ -41,7 +41,7 @@ public class TungTungSahur : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(!isStunned && !isAttacking)
+        if (!isStunned && !isAttacking)
         {
             transform.position -= new Vector3(ttsd.speed * 0.01f, 0, 0);
         }
@@ -118,5 +118,10 @@ public class TungTungSahur : MonoBehaviour
 
             attackTimer = 0f;
         }
+    }
+
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
     }
 }
