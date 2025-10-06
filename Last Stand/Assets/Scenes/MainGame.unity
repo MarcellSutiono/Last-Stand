@@ -1777,6 +1777,19 @@ MonoBehaviour:
     m_Bits: 8
   attackRange: 1
   damage: 1
+--- !u!114 &829157457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829157444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 026f2b188fbdc31479ca70bdc4b86ce1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pd: {fileID: 11400000, guid: c3dd65029d1af22499085f8719e84b74, type: 2}
 --- !u!1 &846921168
 GameObject:
   m_ObjectHideFlags: 0
@@ -5053,6 +5066,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 9024340568259753805, guid: bb2fb06f5dddecc4c921488e98879298, type: 3}
       insertIndex: -1
       addedObject: {fileID: 829157456}
+    - targetCorrespondingSourceObject: {fileID: 9024340568259753805, guid: bb2fb06f5dddecc4c921488e98879298, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 829157457}
   m_SourcePrefab: {fileID: 100100000, guid: bb2fb06f5dddecc4c921488e98879298, type: 3}
 --- !u!1001 &2958126998018009628
 PrefabInstance:

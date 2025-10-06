@@ -8,6 +8,7 @@ public class TungTungSahur : MonoBehaviour
     private float attackTimer = 0f;
     private float stunTimer = 0f;
     private Animator anim;
+    [SerializeField] public PlayerHealth playerHealth;
 
     [SerializeField] private PlayerData pd;
     [SerializeField] private TungTungTungSahurData ttsd;
@@ -17,6 +18,11 @@ public class TungTungSahur : MonoBehaviour
     private void Start()
     {
         anim = GetComponent<Animator>();
+
+        if (playerHealth == null)
+        {
+            playerHealth = GameObject.FindGameObjectWithTag("Player")?.GetComponent<PlayerHealth>();
+        }
     }
 
     private void Update()
@@ -115,7 +121,10 @@ public class TungTungSahur : MonoBehaviour
                 std.health--;
                 Debug.Log(std.health);
             }
-
+            else if (weapon.CompareTag("Player"))
+            {
+                playerHealth.TakeDamage(10);
+            }
             attackTimer = 0f;
         }
     }

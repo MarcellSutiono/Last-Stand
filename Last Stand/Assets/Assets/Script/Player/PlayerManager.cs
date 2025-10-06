@@ -32,6 +32,8 @@ public class PlayerManager : MonoBehaviour
         if (pd.exp >= pd.expNeeded)
         {
             pd.exp = 0;
+            pd.maxHealth += 5;
+            pd.health = pd.maxHealth;
             pd.level++;
             pd.resource++;
             pd.expNeeded += 15 * pd.level;
