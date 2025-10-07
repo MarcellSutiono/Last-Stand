@@ -4,7 +4,10 @@ public class PlayerAttack : MonoBehaviour
 {
     [SerializeField] public PlayerData pd;
     public float attackTimer;
-    public Transform attackPos;
+    public Transform attackPosUp;
+    public Transform attackPosDown;
+    public Transform attackPosLeft;
+    public Transform attackPosRight;
     public LayerMask enemyLayer;
     public float attackRange;
     public int damage;
@@ -50,7 +53,9 @@ public class PlayerAttack : MonoBehaviour
             animator.SetTrigger("attack");
         }
 
-        Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, enemyLayer);
+        Transform currentAttackPos = GetAttackPosition();
+
+        Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(currentAttackPos.position, attackRange, enemyLayer);
         for (int i = 0; i < enemiesToDamage.Length; i++)
         {
             TungTungSahur tungTung = enemiesToDamage[i].GetComponent<TungTungSahur>();
@@ -67,9 +72,38 @@ public class PlayerAttack : MonoBehaviour
         }
     }
 
+    Transform GetAttackPosition()
+    {
+        if (Mathf.Abs(lastMoveDirection.x) > Mathf.Abs(lastMoveDirection.y))
+        {
+            if (lastMoveDirection.x > 0)
+                return attackPosRight;
+            else
+                return attackPosLeft;
+        }
+        else
+        {
+            if (lastMoveDirection.y > 0)
+                return attackPosUp;
+            else
+                return attackPosDown;
+        }
+    }
+
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(attackPos.position, attackRange);
+        
+        if (attackPosUp != null)
+            Gizmos.DrawWireSphere(attackPosUp.position, attackRange);
+        
+        if (attackPosDown != null)
+            Gizmos.DrawWireSphere(attackPosDown.position, attackRange);
+        
+        if (attackPosLeft != null)
+            Gizmos.DrawWireSphere(attackPosLeft.position, attackRange);
+        
+        if (attackPosRight != null)
+            Gizmos.DrawWireSphere(attackPosRight.position, attackRange);
     }
 }
