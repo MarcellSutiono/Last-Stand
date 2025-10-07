@@ -12,11 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c479d3cfa2cea664eb5ec63886a67609, type: 3}
   m_Name: PlayerData
   m_EditorClassIdentifier: 
-  playerSpeed: 8.5
+  playerSpeed: 15
   holdShooter: 0
   holdStunner: 0
   holdKnocker: 0
   exp: 30
-  level: 1
-  expNeeded: 130
-  resource: 0
+  level: 3
+  expNeeded: 85
+  resource: 2
+  health: 105
+  maxHealth: 110
+  attackCooldown: 0.3
+  damageTaken: 5

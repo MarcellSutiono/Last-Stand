@@ -14,4 +14,6 @@ public class PlayerData : ScriptableObject
     public int resource = 0;
     public int health = 100;
     public int maxHealth = 100;
+    public float attackCooldown = 0.6f; // level 2 : 0.3
+    public int damageTaken = 10; // level 3 : 5 
 }

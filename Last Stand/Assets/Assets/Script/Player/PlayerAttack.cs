@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
-    private float attackCd;
+    [SerializeField] public PlayerData pd;
+    public float attackTimer;
     public Transform attackPos;
     public LayerMask enemyLayer;
     public float attackRange;
@@ -26,17 +27,17 @@ public class PlayerAttack : MonoBehaviour
             lastMoveDirection = new Vector2(horizontal, vertical).normalized;
         }
 
-        if (attackCd <= 0)
+        if (attackTimer <= 0)
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 PerformAttack();
-                attackCd = 0.3f;
+                attackTimer = pd.attackCooldown;
             }
         }
         else
         {
-            attackCd -= Time.deltaTime;
+            attackTimer -= Time.deltaTime;
         }
     }
 

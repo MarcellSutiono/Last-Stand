@@ -34,7 +34,9 @@ public class PlayerManager : MonoBehaviour
             pd.exp = 0;
             pd.maxHealth += 5;
             pd.health = pd.maxHealth;
+            if (pd.attackCooldown - 0.3f > 0) pd.attackCooldown -= 0.3f;
             pd.level++;
+            if (pd.level == 3) pd.damageTaken -= 5;
             pd.resource++;
             pd.expNeeded += 15 * pd.level;
         }

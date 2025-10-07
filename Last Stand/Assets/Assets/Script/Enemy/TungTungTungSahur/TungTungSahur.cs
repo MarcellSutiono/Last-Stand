@@ -123,7 +123,7 @@ public class TungTungSahur : MonoBehaviour
             }
             else if (weapon.CompareTag("Player"))
             {
-                playerHealth.TakeDamage(10);
+                playerHealth.TakeDamage(pd.damageTaken);
             }
             attackTimer = 0f;
         }

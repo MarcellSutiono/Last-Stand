@@ -1771,6 +1771,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 868d516df7aff1e41a4275dde2a86b43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pd: {fileID: 11400000, guid: c3dd65029d1af22499085f8719e84b74, type: 2}
+  attackTimer: 0
   attackPos: {fileID: 531743357}
   enemyLayer:
     serializedVersion: 2
