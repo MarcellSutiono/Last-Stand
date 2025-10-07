@@ -63,11 +63,17 @@ public class PlayerAttack : MonoBehaviour
             {
                 tungTung.TakeDamage(damage);
             }
-            
+
             BallerinaCappuccina ballerina = enemiesToDamage[i].GetComponent<BallerinaCappuccina>();
             if (ballerina != null)
             {
                 ballerina.TakeDamage(damage);
+            }
+            
+            AirPlane airplane = enemiesToDamage[i].GetComponent<AirPlane>();
+            if (airplane != null && airplane.isStunned)
+            {
+                airplane.TakeDamage(damage);
             }
         }
     }
