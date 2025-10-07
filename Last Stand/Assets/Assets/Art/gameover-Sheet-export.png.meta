@@ -43,7 +43,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -81,7 +81,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -124,7 +124,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1921
+        width: 1922
         height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -144,9 +144,9 @@ TextureImporter:
       name: gameover-Sheet-export_1
       rect:
         serializedVersion: 2
-        x: 2519
+        x: 2518
         y: 349
-        width: 722
+        width: 724
         height: 172
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -166,9 +166,9 @@ TextureImporter:
       name: gameover-Sheet-export_2
       rect:
         serializedVersion: 2
-        x: 2519
+        x: 2518
         y: 139
-        width: 722
+        width: 724
         height: 172
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -188,7 +188,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 0e8d7bf1887957a41a5835fe02db0d05
     internalID: 0
     vertices: []
     indices: 
@@ -197,7 +197,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      gameover-Sheet-export_0: 5860897272932252953
+      gameover-Sheet-export_1: 2019839355950813711
+      gameover-Sheet-export_2: 8425797885934095549
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
