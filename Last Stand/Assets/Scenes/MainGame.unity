@@ -3348,6 +3348,8 @@ MonoBehaviour:
   tungtungParent: {fileID: 780855262}
   cappuccino: {fileID: 4340046712327427775, guid: ea5ea8015dea20749868a238eae70654, type: 3}
   cappuccinoParent: {fileID: 132710367}
+  airplane: {fileID: 9058019389081453442, guid: 735bcb6671639ad47a532c5167a3c39a, type: 3}
+  airplaneParent: {fileID: 1509658897}
 --- !u!4 &1182134771
 Transform:
   m_ObjectHideFlags: 0
@@ -3883,6 +3885,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1509658897
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1509658898}
+  m_Layer: 0
+  m_Name: AirplaneParent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1509658898
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1509658897}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.022044, y: -0.8779887, z: 0.028328773}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1527582496
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5398,6 +5431,7 @@ SceneRoots:
   - {fileID: 1182134771}
   - {fileID: 780855263}
   - {fileID: 132710368}
+  - {fileID: 1509658898}
   - {fileID: 1877794965}
   - {fileID: 2051984520}
   - {fileID: 629310416}
