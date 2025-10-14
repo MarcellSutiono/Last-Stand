@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d98051df8885774281cb4d58821b404, type: 3}
   m_Name: StunnerData
   m_EditorClassIdentifier: 
-  health: 10
-  stunCooldown: 2
+  health: 20
+  stunCooldown: 5
+  level: 1
