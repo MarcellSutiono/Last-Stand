@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ebb34c63cde45e468dfa2cdf912c342, type: 3}
   m_Name: AirPlaneData
   m_EditorClassIdentifier: 
-  speed: 7
+  speed: 1
   attackCooldown: 3
-  stunDuration: 0
+  stunDuration: 3
