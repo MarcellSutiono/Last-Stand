@@ -5914,6 +5914,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2087344396}
     - target: {fileID: 700494687122343511, guid: bd22fb9414812d94e9d053a094210bbb, type: 3}
+      propertyPath: upgradeButton
+      value: 
+      objectReference: {fileID: 882231366}
+    - target: {fileID: 700494687122343511, guid: bd22fb9414812d94e9d053a094210bbb, type: 3}
       propertyPath: airplaneParent
       value: 
       objectReference: {fileID: 1509658897}
@@ -5929,6 +5933,10 @@ PrefabInstance:
       propertyPath: cappucinoParent
       value: 
       objectReference: {fileID: 132710367}
+    - target: {fileID: 700494687122343511, guid: bd22fb9414812d94e9d053a094210bbb, type: 3}
+      propertyPath: upgradeButtonUI
+      value: 
+      objectReference: {fileID: 882231364}
     - target: {fileID: 700494687122343511, guid: bd22fb9414812d94e9d053a094210bbb, type: 3}
       propertyPath: interactButtonUI
       value: 

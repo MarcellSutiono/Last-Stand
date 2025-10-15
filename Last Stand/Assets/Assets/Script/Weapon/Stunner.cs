@@ -10,7 +10,11 @@ public class Stunner : MonoBehaviour
 
     //------------- BUTTONS -------------
     [SerializeField] private GameObject interactButtonUI;
+    [SerializeField] private GameObject upgradeButtonUI;
+
     [SerializeField] private Button interactButton;
+    [SerializeField] private Button upgradeButton;
+
     [SerializeField] private TextMeshProUGUI interactText;
 
     //------------- Stunner -------------
@@ -39,6 +43,21 @@ public class Stunner : MonoBehaviour
                 pd.holdStunner = true;
                 this.gameObject.SetActive(false);
             });
+
+            if (pd.resource > 0 && std.level != 3)
+            {
+                upgradeButtonUI.SetActive(true);
+                upgradeButton.onClick.RemoveAllListeners();
+                upgradeButton.onClick.AddListener(() =>
+                {
+                    std.level++;
+                    pd.resource--;
+                });
+            }
+            else
+            {
+                upgradeButtonUI.SetActive(false);
+            }
         }
     }
 
@@ -66,13 +85,33 @@ public class Stunner : MonoBehaviour
             anim.SetTrigger("Stun");
             stunTimer = 0f;
 
+            int duration = 0;
+            if (std.level == 1)
+            {
+                duration = 2;
+            }
+            else if(std.level == 2)
+            {
+                duration = 3;
+                std.canDamage = true;
+            }
+            else if (std.level == 3)
+            {
+                duration = 4;
+                std.canDamage = true;
+            }
+
             for (int i = 0; i < tungTungSahurParent.transform.childCount; i++)
             {
                 GameObject tts = tungTungSahurParent.transform.GetChild(i).gameObject;
                 TungTungSahur ttsScript = tts.GetComponent<TungTungSahur>();
                 if (ttsScript.isActiveAndEnabled)
                 {
-                    ttsScript.stunTungTungSahur(2f);
+                    ttsScript.stunTungTungSahur(duration);
+                    if(std.canDamage)
+                    {
+                        ttsScript.health -= 1;
+                    }
                 }
             }
 
@@ -82,7 +121,11 @@ public class Stunner : MonoBehaviour
                 BallerinaCappuccina caScript = ca.GetComponent<BallerinaCappuccina>();
                 if (caScript.isActiveAndEnabled)
                 {
-                    caScript.stunCappuccino(2f);
+                    caScript.stunCappuccino(duration);
+                    if (std.canDamage)
+                    {
+                        caScript.health -= 1;
+                    }
                 }
             }
 
@@ -92,7 +135,11 @@ public class Stunner : MonoBehaviour
                 AirPlane apScript = ap.GetComponent<AirPlane>();
                 if (apScript.isActiveAndEnabled)
                 {
-                    apScript.stunAirplane(2f);
+                    apScript.stunAirplane(duration);
+                    if (std.canDamage)
+                    {
+                        apScript.health -= 1;
+                    }
                 }
             }
         }

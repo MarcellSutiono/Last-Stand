@@ -189,7 +189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e089ed1b3e615264eb67cc1838df264d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
+  health: 12
   isAttacking: 0
   isStunned: 0
   pd: {fileID: 11400000, guid: c3dd65029d1af22499085f8719e84b74, type: 2}

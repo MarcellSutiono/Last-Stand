@@ -41,7 +41,7 @@ public class Shooter : MonoBehaviour
                 this.gameObject.SetActive(false);
             });
 
-            if(pd.resource > 0)
+            if(pd.resource > 0 && sd.level != 3)
             {
                 upgradeButtonUI.SetActive(true);
                 upgradeButton.onClick.RemoveAllListeners();
@@ -50,6 +50,10 @@ public class Shooter : MonoBehaviour
                     sd.level++;
                     pd.resource--;
                 });
+            }
+            else
+            {
+                upgradeButtonUI.SetActive(false);
             }
         }
     }
