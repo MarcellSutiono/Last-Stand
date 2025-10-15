@@ -86,6 +86,7 @@ public class AirPlane : MonoBehaviour
 
     public void attack(GameObject weapon)
     {
+        anim.SetTrigger("Attack");  
         if (attackTimer >= apd.attackCooldown)
         {
             if (weapon.CompareTag("Shooter"))

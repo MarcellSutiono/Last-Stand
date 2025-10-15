@@ -48,6 +48,5 @@ public class PlayerHealth : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
-        healthbar.transform.position = Camera.main.WorldToScreenPoint(transform.parent.position + Offset);
     }
 }
