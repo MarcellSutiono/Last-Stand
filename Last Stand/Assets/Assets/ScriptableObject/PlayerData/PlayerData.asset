@@ -16,11 +16,11 @@ MonoBehaviour:
   holdShooter: 0
   holdStunner: 0
   holdKnocker: 0
-  exp: 60
+  exp: 0
   level: 1
   expNeeded: 100
   resource: 0
-  health: 95
+  health: 100
   maxHealth: 110
   attackCooldown: 0.5
   damageTaken: 5
