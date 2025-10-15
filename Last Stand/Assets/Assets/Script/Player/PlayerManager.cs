@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayerManager : MonoBehaviour
@@ -24,6 +25,10 @@ public class PlayerManager : MonoBehaviour
         resourceCount.text = pd.resource.ToString();
 
         levelUpChecker();
+        if(pd.health <= 0)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
     }
 
     private void levelUpChecker()
@@ -41,4 +46,5 @@ public class PlayerManager : MonoBehaviour
             pd.expNeeded += 15 * pd.level;
         }
     }
+
 }

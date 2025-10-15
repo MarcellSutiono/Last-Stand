@@ -9,6 +9,8 @@ public class BallerinaCappuccina : MonoBehaviour
     private float stunTimer = 0f;
     private Animator anim;
 
+    [SerializeField] public PlayerHealth playerHealth;
+
     [SerializeField] private PlayerData pd;
     [SerializeField] private BallerinaCappucinaData bcd;
     [SerializeField] private ShooterData shd;
@@ -16,6 +18,11 @@ public class BallerinaCappuccina : MonoBehaviour
     private void Start()
     {
         anim = GetComponent<Animator>();
+
+        if (playerHealth == null)
+        {
+            playerHealth = GameObject.FindGameObjectWithTag("Player")?.GetComponent<PlayerHealth>();
+        }
     }
 
     private void Update()
@@ -94,6 +101,11 @@ public class BallerinaCappuccina : MonoBehaviour
                 attackTimer = 0;
                 Debug.Log(std.health);
             }
+            else if (weapon.CompareTag("Player"))
+            {
+                playerHealth.TakeDamage(pd.damageTaken);
+            }
+            attackTimer = 0f;
         }
     }
     public void TakeDamage(int damage)

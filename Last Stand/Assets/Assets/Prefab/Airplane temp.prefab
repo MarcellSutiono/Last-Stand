@@ -99,6 +99,7 @@ GameObject:
   - component: {fileID: 8703799329093437160}
   - component: {fileID: 8882171181728363259}
   - component: {fileID: 5358064898461251939}
+  - component: {fileID: 6688858537572609964}
   m_Layer: 0
   m_Name: Airplane temp
   m_TagString: Airplane
@@ -192,6 +193,7 @@ MonoBehaviour:
   health: 12
   isAttacking: 0
   isStunned: 0
+  playerHealth: {fileID: 0}
   pd: {fileID: 11400000, guid: c3dd65029d1af22499085f8719e84b74, type: 2}
   apd: {fileID: 11400000, guid: 7a80e9a004cf3124fab7cdbce19b69a2, type: 2}
   shd: {fileID: 11400000, guid: a8349b994e0a1744e8830b1b53995d03, type: 2}
@@ -242,3 +244,25 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 5.6, y: 1.9}
   m_EdgeRadius: 0
+--- !u!95 &6688858537572609964
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9058019389081453442}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: da2637fbdf6090044989ebe42dd6a4c9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

@@ -7,7 +7,7 @@ public class BallerinaCappucinaAttack : MonoBehaviour
     private bool isAttacking = false;
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.CompareTag("Shooter") || col.CompareTag("Knocker") || col.CompareTag("Stunner"))
+        if (col.CompareTag("Shooter") || col.CompareTag("Knocker") || col.CompareTag("Stunner") || col.CompareTag("Player"))
         {
             isAttacking = true;
             currWeaponCollided = col.gameObject;
@@ -16,7 +16,7 @@ public class BallerinaCappucinaAttack : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D col)
     {
-        if (col.CompareTag("Shooter") || col.CompareTag("Knocker") || col.CompareTag("Stunner"))
+        if (col.CompareTag("Shooter") || col.CompareTag("Knocker") || col.CompareTag("Stunner") || col.CompareTag("Player"))
         {
             isAttacking = false;
             currWeaponCollided = null;

@@ -7,11 +7,24 @@ public class AirPlane : MonoBehaviour
     public bool isStunned = false;
     private float attackTimer = 0f;
     private float stunTimer = 0f;
+    private Animator anim;
+
+    [SerializeField] public PlayerHealth playerHealth;
 
     [SerializeField] private PlayerData pd;
     [SerializeField] private AirPlaneData apd;
     [SerializeField] private ShooterData shd;
     [SerializeField] private StunnerData std;
+
+    private void Start()
+    {
+        anim = GetComponent<Animator>();
+
+        if (playerHealth == null)
+        {
+            playerHealth = GameObject.FindGameObjectWithTag("Player")?.GetComponent<PlayerHealth>();
+        }
+    }
 
     private void Update()
     {
@@ -87,6 +100,11 @@ public class AirPlane : MonoBehaviour
                 attackTimer = 0;
                 Debug.Log(std.health);
             }
+            else if (weapon.CompareTag("Player"))
+            {
+                playerHealth.TakeDamage(pd.damageTaken);
+            }
+            attackTimer = 0f;
         }
     }
     public void TakeDamage(int damage)
