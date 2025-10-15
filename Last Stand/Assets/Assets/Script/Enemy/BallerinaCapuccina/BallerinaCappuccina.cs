@@ -7,11 +7,16 @@ public class BallerinaCappuccina : MonoBehaviour
     public bool isStunned = false;
     private float attackTimer = 0f;
     private float stunTimer = 0f;
+    private Animator anim;
 
     [SerializeField] private PlayerData pd;
     [SerializeField] private BallerinaCappucinaData bcd;
     [SerializeField] private ShooterData shd;
     [SerializeField] private StunnerData std;
+    private void Start()
+    {
+        anim = GetComponent<Animator>();
+    }
 
     private void Update()
     {
@@ -40,22 +45,6 @@ public class BallerinaCappuccina : MonoBehaviour
             transform.position -= new Vector3(bcd.speed * 0.01f, 0, 0);
         }
     }
-
-    //private void OnTriggerEnter2D(Collider2D col)
-    //{
-    //    if (col.CompareTag("Bullet"))
-    //    {
-    //        if (shd.level == 1)
-    //        {
-    //            health--;
-    //        }
-    //        else if (shd.level >= 2)
-    //        {
-    //            health -= 2;
-    //        }
-    //        Destroy(col.gameObject);
-    //    }
-    //}
 
     private void attackStopwatch()
     {
@@ -91,8 +80,10 @@ public class BallerinaCappuccina : MonoBehaviour
     {
         if (attackTimer >= bcd.attackCooldown)
         {
+            anim.SetTrigger("Attack");
             if (weapon.CompareTag("Shooter"))
             {
+                
                 shd.health--;
                 attackTimer = 0;
                 Debug.Log(shd.health);

@@ -41,22 +41,6 @@ public class AirPlane : MonoBehaviour
         }
     }
 
-    //private void OnTriggerEnter2D(Collider2D col)
-    //{
-    //    if (col.CompareTag("Bullet"))
-    //    {
-    //        if (shd.level == 1)
-    //        {
-    //            health--;
-    //        }
-    //        else if (shd.level >= 2)
-    //        {
-    //            health -= 2;
-    //        }
-    //        Destroy(col.gameObject);
-    //    }
-    //}
-
     private void attackStopwatch()
     {
         attackTimer += Time.deltaTime;
@@ -76,13 +60,13 @@ public class AirPlane : MonoBehaviour
         }
     }
 
-    public void stunCappuccino(float duration)
+    public void stunAirplane(float duration)
     {
         isStunned = true;
         apd.stunDuration = duration;
     }
 
-    public void knockCappuccino(float power)
+    public void knockAirplane(float power)
     {
         transform.position += new Vector3(power, 0, 0);
     }

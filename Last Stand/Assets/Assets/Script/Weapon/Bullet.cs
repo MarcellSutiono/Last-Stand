@@ -58,5 +58,23 @@ public class Bullet : MonoBehaviour
                 health -= 1;
             }
         }
+        else if (col.gameObject.CompareTag("Airplane"))
+        {
+            if (sd.level == 1)
+            {
+                col.gameObject.GetComponent<AirPlane>().health--;
+                health -= 2;
+            }
+            else if (sd.level == 2)
+            {
+                col.gameObject.GetComponent<AirPlane>().health -= 2;
+                health -= 2;
+            }
+            else if (sd.level >= 3)
+            {
+                col.gameObject.GetComponent<AirPlane>().health -= 2;
+                health -= 1;
+            }
+        }
     }
 }

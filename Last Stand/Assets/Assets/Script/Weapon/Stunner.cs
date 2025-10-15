@@ -16,6 +16,7 @@ public class Stunner : MonoBehaviour
     //------------- Stunner -------------
     [SerializeField] private GameObject tungTungSahurParent;
     [SerializeField] private GameObject cappucinoParent;
+    [SerializeField] private GameObject airplaneParent;
     [SerializeField] private StunnerData std;
     [SerializeField] private Image flashImage;
     [SerializeField] private float flashSpeed = 0.5f;
@@ -82,6 +83,16 @@ public class Stunner : MonoBehaviour
                 if (caScript.isActiveAndEnabled)
                 {
                     caScript.stunCappuccino(2f);
+                }
+            }
+
+            for (int i = 0; i < airplaneParent.transform.childCount; i++)
+            {
+                GameObject ap = airplaneParent.transform.GetChild(i).gameObject;
+                AirPlane apScript = ap.GetComponent<AirPlane>();
+                if (apScript.isActiveAndEnabled)
+                {
+                    apScript.stunAirplane(2f);
                 }
             }
         }

@@ -16,6 +16,7 @@ public class Knocker : MonoBehaviour
     [SerializeField] private float knockCooldown = 2f;
     [SerializeField] private GameObject tungTungSahurParent;
     [SerializeField] private GameObject cappuccinoParent;
+    [SerializeField] private GameObject airplaneParent;
     private Animator anim;
     private float knockTimer = 0f;
 
@@ -73,6 +74,16 @@ public class Knocker : MonoBehaviour
                 if (caScript.isActiveAndEnabled)
                 {
                     caScript.knockCappuccino(5f);
+                }
+            }
+
+            for (int i = 0; i < airplaneParent.transform.childCount; i++)
+            {
+                GameObject ap = airplaneParent.transform.GetChild(i).gameObject;
+                AirPlane caSapScriptcript = ap.GetComponent<AirPlane>();
+                if (caSapScriptcript.isActiveAndEnabled)
+                {
+                    caSapScriptcript.knockAirplane(5f);
                 }
             }
         }

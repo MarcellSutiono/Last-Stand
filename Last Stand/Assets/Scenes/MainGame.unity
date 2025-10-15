@@ -2186,14 +2186,14 @@ RectTransform:
   m_GameObject: {fileID: 855127106}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.23483, y: 1.23483, z: 0.82322}
+  m_LocalScale: {x: 1.5325276, y: 1.5325276, z: 1.021685}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 70755015}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 140, y: 127}
+  m_AnchoredPosition: {x: 221.38, y: 126.38}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &855127108
@@ -5600,6 +5600,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2087344396}
     - target: {fileID: 3251035564048607943, guid: 1273df109998fb54b8193f0f7250c657, type: 3}
+      propertyPath: airplaneParent
+      value: 
+      objectReference: {fileID: 1509658897}
+    - target: {fileID: 3251035564048607943, guid: 1273df109998fb54b8193f0f7250c657, type: 3}
       propertyPath: interactButton
       value: 
       objectReference: {fileID: 1250046733}
@@ -5909,6 +5913,10 @@ PrefabInstance:
       propertyPath: interactText
       value: 
       objectReference: {fileID: 2087344396}
+    - target: {fileID: 700494687122343511, guid: bd22fb9414812d94e9d053a094210bbb, type: 3}
+      propertyPath: airplaneParent
+      value: 
+      objectReference: {fileID: 1509658897}
     - target: {fileID: 700494687122343511, guid: bd22fb9414812d94e9d053a094210bbb, type: 3}
       propertyPath: interactButton
       value: 

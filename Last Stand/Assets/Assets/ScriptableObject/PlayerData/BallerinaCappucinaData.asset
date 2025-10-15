@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 179bbd706e7561e4fb25c098cdcd5e89, type: 3}
   m_Name: BallerinaCappucinaData
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 3.5
   attackCooldown: 1.5
-  stunDuration: 1
+  stunDuration: 2

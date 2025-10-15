@@ -10,7 +10,7 @@ public class GameOverHandler : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if(col.gameObject.CompareTag("Ballerina") || col.gameObject.CompareTag("TungTung"))
+        if (col.gameObject.CompareTag("Ballerina") || col.gameObject.CompareTag("TungTung") ||col.gameObject.CompareTag("Airplane"))
         {
             Time.timeScale = 0f;
             gameOverLayout.SetActive(true);
