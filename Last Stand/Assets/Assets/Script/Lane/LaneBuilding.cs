@@ -93,7 +93,11 @@ public class LaneBuilding : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D col)
     {
-        interactButtonUI.SetActive(false);
+        if (interactButtonUI != null)
+            interactButtonUI.SetActive(false);
+
+        if (currentShadow != null)
+            currentShadow.SetActive(false);
     }
 
     private void showShadow(GameObject shadow)

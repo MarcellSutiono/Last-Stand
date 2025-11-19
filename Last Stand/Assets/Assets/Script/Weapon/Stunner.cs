@@ -163,5 +163,7 @@ public class Stunner : MonoBehaviour
             flashImage.color = new Color(1, 1, 1, Mathf.Lerp(1, 0, t));
             yield return null;
         }
+
+        flashImage.color = new Color(1, 1, 1, 0);
     }
 }

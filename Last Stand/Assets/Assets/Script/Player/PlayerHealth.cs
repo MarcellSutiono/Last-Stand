@@ -43,7 +43,6 @@ public class PlayerHealth : MonoBehaviour
             }
         }
 
-        Debug.Log(Timer);
         if (pd.health <= 0)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);

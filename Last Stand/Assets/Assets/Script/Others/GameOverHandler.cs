@@ -36,6 +36,7 @@ public class GameOverHandler : MonoBehaviour
         pd.exp = 0;
         pd.expNeeded = 100;
         pd.resource = 0;
+        pd.health = pd.maxHealth;
 
         //shooter data
         shd.level = 1;
