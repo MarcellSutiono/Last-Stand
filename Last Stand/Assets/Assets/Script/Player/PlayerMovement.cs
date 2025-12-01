@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour
     private Animator anim;
     public ShooterData shd;
     public StunnerData std;
+    private Vector2 lastMoveDirection;
+
 
     private void Awake()
     {
@@ -41,17 +43,25 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        if(moveValue != Vector2.zero)
+        float horizontal = Input.GetAxisRaw("Horizontal");
+        float vertical = Input.GetAxisRaw("Vertical");
+
+        if (horizontal != 0 || vertical != 0)
+        {
+            lastMoveDirection = new Vector2(horizontal, vertical).normalized;
+        }
+        Debug.Log((lastMoveDirection.x, lastMoveDirection.y));
+        if (moveValue != Vector2.zero)
         {
             anim.SetBool("isWalking", true);
-            anim.SetFloat("InputX", moveValue.x);
-            anim.SetFloat("InputY", moveValue.y);
+            anim.SetFloat("InputX", lastMoveDirection.x);
+            anim.SetFloat("InputY", lastMoveDirection.y);
         }
         else
         {
             anim.SetBool("isWalking", false);
-            anim.SetFloat("InputX", 0);
-            anim.SetFloat("InputY", 0);
+            anim.SetFloat("InputX", lastMoveDirection.x);
+            anim.SetFloat("InputY", lastMoveDirection.y);
         }
         move();
     }

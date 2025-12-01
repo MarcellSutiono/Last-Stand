@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class TungTungSahur : MonoBehaviour
 {
-    public int health = 2;
+    public int health;
     public bool isAttacking = false;
     public bool isStunned = false;
     private float attackTimer = 0f;
@@ -131,6 +131,7 @@ public class TungTungSahur : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        Debug.Log("Tungtung: " + (health));
         health -= damage;
     }
 }

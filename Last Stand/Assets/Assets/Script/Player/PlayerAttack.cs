@@ -9,11 +9,12 @@ public class PlayerAttack : MonoBehaviour
     public Transform attackPosLeft;
     public Transform attackPosRight;
     public LayerMask enemyLayer;
-    public float attackRange;
-    public int damage;
+    public float attackRange = 5f;
+    public int damage = 1;
+    public Transform currentAttackPos;
     
     private Animator animator;
-    private Vector2 lastMoveDirection = Vector2.down;
+    private Vector2 lastMoveDirection;
 
     void Start()
     {
@@ -53,26 +54,29 @@ public class PlayerAttack : MonoBehaviour
             animator.SetTrigger("attack");
         }
 
-        Transform currentAttackPos = GetAttackPosition();
-
+        currentAttackPos = GetAttackPosition();
+        Debug.Log(currentAttackPos);
         Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(currentAttackPos.position, attackRange, enemyLayer);
         for (int i = 0; i < enemiesToDamage.Length; i++)
         {
             TungTungSahur tungTung = enemiesToDamage[i].GetComponent<TungTungSahur>();
             if (tungTung != null)
             {
+                Debug.Log("Hit");
                 tungTung.TakeDamage(damage);
             }
 
             BallerinaCappuccina ballerina = enemiesToDamage[i].GetComponent<BallerinaCappuccina>();
             if (ballerina != null)
             {
+                Debug.Log("Hit");
                 ballerina.TakeDamage(damage);
             }
             
             AirPlane airplane = enemiesToDamage[i].GetComponent<AirPlane>();
             if (airplane != null && airplane.isStunned)
             {
+                Debug.Log("Hit");
                 airplane.TakeDamage(damage);
             }
         }
@@ -83,33 +87,34 @@ public class PlayerAttack : MonoBehaviour
         if (Mathf.Abs(lastMoveDirection.x) > Mathf.Abs(lastMoveDirection.y))
         {
             if (lastMoveDirection.x > 0)
+            {
+                Debug.Log("Attack R");
                 return attackPosRight;
+            }
             else
+            {
+                Debug.Log("Attack L");
                 return attackPosLeft;
+            }
         }
         else
         {
             if (lastMoveDirection.y > 0)
+            {
+                Debug.Log("Attack U");
                 return attackPosUp;
+            }
             else
+            {
+                Debug.Log("Attack D");
                 return attackPosDown;
+            }
         }
     }
 
-    void OnDrawGizmosSelected()
+    private void OnDrawGizmos()
     {
-        Gizmos.color = Color.red;
-        
-        if (attackPosUp != null)
-            Gizmos.DrawWireSphere(attackPosUp.position, attackRange);
-        
-        if (attackPosDown != null)
-            Gizmos.DrawWireSphere(attackPosDown.position, attackRange);
-        
-        if (attackPosLeft != null)
-            Gizmos.DrawWireSphere(attackPosLeft.position, attackRange);
-        
-        if (attackPosRight != null)
-            Gizmos.DrawWireSphere(attackPosRight.position, attackRange);
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(currentAttackPos.position, attackRange);
     }
 }
