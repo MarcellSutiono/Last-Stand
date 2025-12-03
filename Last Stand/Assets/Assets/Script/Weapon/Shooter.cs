@@ -1,3 +1,4 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -17,6 +18,7 @@ public class Shooter : MonoBehaviour
     [SerializeField] private TextMeshProUGUI interactText;
 
     //------------- SHOOTER -------------
+    private bool isBroken = true;
     [SerializeField] private ShooterData sd;
     [SerializeField] private GameObject bullet;
     [SerializeField] private TextMeshProUGUI levelIndicator;
@@ -67,7 +69,6 @@ public class Shooter : MonoBehaviour
     private void Update()
     {
         shooting();
-
         levelIndicator.text = sd.level.ToString();
     }
 

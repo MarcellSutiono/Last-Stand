@@ -3,7 +3,8 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "StunnerData", menuName = "Scriptable Objects/StunnerData")]
 public class StunnerData : ScriptableObject
 {
-    public float health = 8f;
+    public float maxHealth = 40f;
+    public float health = 40f;
     public float stunCooldown = 2f;
     public int level = 1;
     public bool canDamage = false;

@@ -12,7 +12,6 @@ public class PlayerMovement : MonoBehaviour
     public StunnerData std;
     private Vector2 lastMoveDirection;
 
-
     private void Awake()
     {
         //player data

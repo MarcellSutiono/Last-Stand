@@ -18,6 +18,7 @@ public class Stunner : MonoBehaviour
     [SerializeField] private TextMeshProUGUI interactText;
 
     //------------- Stunner -------------
+    private bool isBroken = false;
     [SerializeField] private GameObject tungTungSahurParent;
     [SerializeField] private GameObject cappucinoParent;
     [SerializeField] private GameObject airplaneParent;

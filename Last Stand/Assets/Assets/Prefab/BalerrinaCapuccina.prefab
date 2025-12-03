@@ -105,7 +105,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 711e2c0f59fddce4db38747feed55fe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 3
+  health: 5
+  power: 10
   isAttacking: 0
   isStunned: 0
   playerHealth: {fileID: 0}
@@ -113,6 +114,7 @@ MonoBehaviour:
   bcd: {fileID: 11400000, guid: e14e0ad8fca549a438f5d5c7b52121e1, type: 2}
   shd: {fileID: 11400000, guid: a8349b994e0a1744e8830b1b53995d03, type: 2}
   std: {fileID: 11400000, guid: 39f7f0b52ea2907468e72521517925fd, type: 2}
+  kd: {fileID: 11400000, guid: f2b6107dab32fd04ca320b7cba325108, type: 2}
 --- !u!61 &7786840115408728261
 BoxCollider2D:
   m_ObjectHideFlags: 0

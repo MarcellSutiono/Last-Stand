@@ -1,3 +1,4 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,10 +14,13 @@ public class Knocker : MonoBehaviour
     [SerializeField] private TextMeshProUGUI interactText;
 
     //------------- KNOCKER -------------
+    private bool isBroken = false;
     [SerializeField] private float knockCooldown = 2f;
     [SerializeField] private GameObject tungTungSahurParent;
     [SerializeField] private GameObject cappuccinoParent;
     [SerializeField] private GameObject airplaneParent;
+    [SerializeField] private KnockerData kd;
+    public AudioManager am;
     private Animator anim;
     private float knockTimer = 0f;
 
@@ -30,6 +34,7 @@ public class Knocker : MonoBehaviour
             interactButton.onClick.RemoveAllListeners();
             interactButton.onClick.AddListener(() =>
             {
+                am.playSFX(am.pickTowerSFX);
                 pd.holdKnocker = true;
                 this.gameObject.SetActive(false);
             });
@@ -45,6 +50,7 @@ public class Knocker : MonoBehaviour
     {
         anim = GetComponent<Animator>();
     }
+
     private void Update()
     {
         knockTimer += Time.deltaTime;

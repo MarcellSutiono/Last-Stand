@@ -95,9 +95,6 @@ public class LaneBuilding : MonoBehaviour
     {
         if (interactButtonUI != null)
             interactButtonUI.SetActive(false);
-
-        if (currentShadow != null)
-            currentShadow.SetActive(false);
     }
 
     private void showShadow(GameObject shadow)

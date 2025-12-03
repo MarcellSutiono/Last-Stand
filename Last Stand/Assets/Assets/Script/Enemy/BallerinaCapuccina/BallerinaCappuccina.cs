@@ -3,6 +3,7 @@ using UnityEngine;
 public class BallerinaCappuccina : MonoBehaviour
 {
     public int health = 1;
+    public int power = 10;
     public bool isAttacking = false;
     public bool isStunned = false;
     private float attackTimer = 0f;
@@ -15,6 +16,7 @@ public class BallerinaCappuccina : MonoBehaviour
     [SerializeField] private BallerinaCappucinaData bcd;
     [SerializeField] private ShooterData shd;
     [SerializeField] private StunnerData std;
+    [SerializeField] private KnockerData kd;
     private void Start()
     {
         anim = GetComponent<Animator>();
@@ -91,19 +93,25 @@ public class BallerinaCappuccina : MonoBehaviour
             if (weapon.CompareTag("Shooter"))
             {
                 
-                shd.health--;
+                shd.health -= power;
                 attackTimer = 0;
                 Debug.Log(shd.health);
             }
             else if (weapon.CompareTag("Stunner"))
             {
-                std.health--;
+                std.health -= power;
                 attackTimer = 0;
                 Debug.Log(std.health);
             }
+            else if(weapon.CompareTag("Knocker"))
+            {
+                kd.health -= power;
+                attackTimer = 0;
+                Debug.Log(kd.health);
+            }
             else if (weapon.CompareTag("Player"))
             {
-                playerHealth.TakeDamage(pd.damageTaken);
+                playerHealth.TakeDamage(power);
             }
             attackTimer = 0f;
         }

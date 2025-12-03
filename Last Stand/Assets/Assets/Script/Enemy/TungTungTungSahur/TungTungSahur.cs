@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class TungTungSahur : MonoBehaviour
 {
-    public int health;
+    public int health = 2;
+    public int power = 10;
     public bool isAttacking = false;
     public bool isStunned = false;
     private float attackTimer = 0f;
@@ -14,6 +15,7 @@ public class TungTungSahur : MonoBehaviour
     [SerializeField] private TungTungTungSahurData ttsd;
     [SerializeField] private ShooterData shd;
     [SerializeField] private StunnerData std;
+    [SerializeField] private KnockerData kd;
 
     private void Start()
     {
@@ -83,8 +85,6 @@ public class TungTungSahur : MonoBehaviour
             attackTimer = ttsd.attackCooldown;
         }
     }
-
-
     private void deathChecker()
     {
         if (health <= 0)
@@ -93,7 +93,6 @@ public class TungTungSahur : MonoBehaviour
             pd.exp = pd.exp + 10;
         }
     }
-
     public void stunTungTungSahur(float duration)
     {
         isStunned = true;
@@ -113,17 +112,22 @@ public class TungTungSahur : MonoBehaviour
 
             if (weapon.CompareTag("Shooter"))
             {
-                shd.health--;
+                shd.health -= power;
                 Debug.Log(shd.health);
             }
             else if (weapon.CompareTag("Stunner"))
             {
-                std.health--;
+                std.health -= power;
                 Debug.Log(std.health);
+            }
+            else if (weapon.CompareTag("Knocker"))
+            {
+                kd.health -= power;
+                Debug.Log(kd.health);
             }
             else if (weapon.CompareTag("Player"))
             {
-                playerHealth.TakeDamage(pd.damageTaken);
+                playerHealth.TakeDamage(power);
             }
             attackTimer = 0f;
         }
