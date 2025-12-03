@@ -15,6 +15,7 @@ public class PlayerAttack : MonoBehaviour
     
     private Animator animator;
     private Vector2 lastMoveDirection;
+    private Vector2 dir;
 
     void Start()
     {
@@ -23,13 +24,10 @@ public class PlayerAttack : MonoBehaviour
 
     void Update()
     {
-        float horizontal = Input.GetAxisRaw("Horizontal");
-        float vertical = Input.GetAxisRaw("Vertical");
+        lastMoveDirection = GetComponent<PlayerMovement>().lastMoveDirection;
+
+        dir = lastMoveDirection;
         
-        if (horizontal != 0 || vertical != 0)
-        {
-            lastMoveDirection = new Vector2(horizontal, vertical).normalized;
-        }
 
         if (attackTimer <= 0)
         {
@@ -49,8 +47,8 @@ public class PlayerAttack : MonoBehaviour
     {
         if (animator != null)
         {
-            animator.SetFloat("AttackX", lastMoveDirection.x);
-            animator.SetFloat("AttackY", lastMoveDirection.y);
+            animator.SetFloat("AttackX", dir.x);
+            animator.SetFloat("AttackY", dir.y);
             animator.SetTrigger("attack");
         }
 
@@ -115,6 +113,7 @@ public class PlayerAttack : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.green;
-        Gizmos.DrawWireSphere(currentAttackPos.position, attackRange);
+        if(currentAttackPos != null)
+            Gizmos.DrawWireSphere(currentAttackPos.position, attackRange);
     }
 }

@@ -18,7 +18,7 @@ public class Interstitial : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowL
 
     private void Start()
     {
-        LoadAd();
+        //LoadAd();
     }
 
     public void TryShowAd()
