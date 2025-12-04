@@ -18,7 +18,6 @@ public class PlayerMovement : MonoBehaviour
         pd.level = 1;
         pd.exp = 0;
         pd.expNeeded = 100;
-        pd.resource = 0;
 
         //shooter data
         shd.level = 1;

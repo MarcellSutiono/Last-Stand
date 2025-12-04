@@ -15,13 +15,12 @@ public class Shooter : MonoBehaviour
     [SerializeField] private Button interactButton;
     [SerializeField] private Button upgradeButton;
 
-    [SerializeField] private TextMeshProUGUI interactText;
-
     //------------- SHOOTER -------------
     private bool isBroken = true;
     [SerializeField] private ShooterData sd;
     [SerializeField] private GameObject bullet;
     [SerializeField] private TextMeshProUGUI levelIndicator;
+    [SerializeField] private int upgradeCost = 5;
     private float shootTimer = 0;
 
     //------------- SHOOTER -------------
@@ -31,8 +30,6 @@ public class Shooter : MonoBehaviour
     {
         if (col.CompareTag("Player") && (!pd.holdStunner && !pd.holdKnocker))
         {
-            interactText.text = "Took Shooter";
-
             interactButtonUI.SetActive(true);
 
             interactButton.onClick.RemoveAllListeners();
@@ -43,14 +40,15 @@ public class Shooter : MonoBehaviour
                 this.gameObject.SetActive(false);
             });
 
-            if(pd.resource > 0 && sd.level != 3)
+            if(pd.resource >= upgradeCost)
             {
                 upgradeButtonUI.SetActive(true);
                 upgradeButton.onClick.RemoveAllListeners();
                 upgradeButton.onClick.AddListener(() =>
                 {
-                    sd.level++;
-                    pd.resource--;
+                    pd.resource -= upgradeCost;
+                    upgradeCost += 5;
+                    FindAnyObjectByType<UpgradePanel>().shooterUpgrade();
                 });
             }
             else
@@ -83,9 +81,26 @@ public class Shooter : MonoBehaviour
 
                 am.playSFX(am.zapSFX);
 
-                GameObject bulletGameObject = Instantiate(bullet, transform.position + new Vector3(1f, 1.25f, 0), Quaternion.identity);
+                if (!sd.hasDoubleProjectile && !sd.hasSplashLane){
+                    GameObject bulletGameObject = Instantiate(bullet, transform.position + new Vector3(1f, 1.25f, 0), Quaternion.identity);
+                }else if (sd.hasDoubleProjectile && !sd.hasSplashLane){
+                    StartCoroutine(ShootDoubleProjectile());
+                }else if (!sd.hasDoubleProjectile && sd.hasSplashLane){
+                    int bulletCount = 3;
+                    float spreadAngle = 15f; // degrees between each bullet
 
-                if (sd.level == 1)
+                    for (int i = 0; i < bulletCount; i++)
+                    {
+                        float angleOffset = (i - (bulletCount - 1) / 2f) * spreadAngle;
+    
+                        Quaternion rotation = Quaternion.Euler(0, 0, angleOffset);
+    
+                        GameObject bulletGameObject = Instantiate(bullet, transform.position + new Vector3(1f, 1.25f, 0), rotation);
+                    }
+                }else if (sd.hasDoubleProjectile && sd.hasSplashLane){
+                    StartCoroutine(ShootDoubleSplashLane());
+                }
+                /*if (sd.level == 1)
                 {
                     bullet.gameObject.GetComponent<SpriteRenderer>().color = Color.white;
                 }
@@ -97,7 +112,41 @@ public class Shooter : MonoBehaviour
                         bullet.gameObject.GetComponent<SpriteRenderer>().color = customColor;
                     }
                 }
+                */
             }
+        }
+    }
+
+    IEnumerator ShootDoubleProjectile()
+    {
+        GameObject bulletGameObject1 = Instantiate(bullet, transform.position + new Vector3(1f, 1.5f, 0), Quaternion.identity);
+        yield return new WaitForSeconds(0.3f);
+        GameObject bulletGameObject2 = Instantiate(bullet, transform.position + new Vector3(1f, 1.5f, 0), Quaternion.identity);
+    }
+
+    IEnumerator ShootDoubleSplashLane()
+    {
+        int bulletCount = 3;
+        float spreadAngle = 15f; // degrees between each bullet
+
+        for (int i = 0; i < bulletCount; i++)
+        {
+            float angleOffset = (i - (bulletCount - 1) / 2f) * spreadAngle;
+
+            Quaternion rotation = Quaternion.Euler(0, 0, angleOffset);
+
+            GameObject bulletGameObject1 = Instantiate(bullet, transform.position + new Vector3(1f, 1.5f, 0), rotation);
+        }
+
+        yield return new WaitForSeconds(0.3f);
+
+        for (int i = 0; i < bulletCount; i++)
+        {
+            float angleOffset = (i - (bulletCount - 1) / 2f) * spreadAngle;
+
+            Quaternion rotation = Quaternion.Euler(0, 0, angleOffset);
+
+            GameObject bulletGameObject2 = Instantiate(bullet, transform.position + new Vector3(1f, 1.5f, 0), rotation);
         }
     }
 }

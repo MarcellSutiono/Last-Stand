@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: ShooterData
   m_EditorClassIdentifier: 
   maxHealth: 50
-  health: 50
-  shootDelay: 1.2
-  level: 1
+  health: 75
+  shootDelay: 2.4
+  level: 3
   enemyInsight: 1
+  damage: 12
+  hasDoubleProjectile: 0
+  hasSplashLane: 0

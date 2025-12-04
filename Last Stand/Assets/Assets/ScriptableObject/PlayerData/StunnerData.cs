@@ -8,4 +8,6 @@ public class StunnerData : ScriptableObject
     public float stunCooldown = 2f;
     public int level = 1;
     public bool canDamage = false;
+    public float stunTime = 2f;
+    public bool canKnockback = false;
 }

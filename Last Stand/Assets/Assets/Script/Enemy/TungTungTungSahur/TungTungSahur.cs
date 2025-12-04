@@ -1,9 +1,12 @@
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class TungTungSahur : MonoBehaviour
 {
-    public int health = 2;
-    public int power = 10;
+    public float health = 6f;
+    public float maxHealth = 6f;
+    public float power = 10;
     public bool isAttacking = false;
     public bool isStunned = false;
     private float attackTimer = 0f;
@@ -16,10 +19,19 @@ public class TungTungSahur : MonoBehaviour
     [SerializeField] private ShooterData shd;
     [SerializeField] private StunnerData std;
     [SerializeField] private KnockerData kd;
+    [SerializeField] public Slider healthBar;
+    public int level;
+    [SerializeField] public TextMeshProUGUI levelText;
+    public GameObject stun;
 
     private void Start()
     {
         anim = GetComponent<Animator>();
+        maxHealth = 6 * Mathf.Pow(1.5f, level - 1);
+        power = 10* Mathf.Pow(1.5f, level - 1);
+        health = maxHealth;
+
+        levelText.text = level.ToString();
 
         if (playerHealth == null)
         {
@@ -32,16 +44,20 @@ public class TungTungSahur : MonoBehaviour
         deathChecker();
         attackStopwatch();
         stunStopwatch();
+
+        healthBar.value = health/maxHealth;
     }
 
     private void stunStopwatch()
     {
         if (isStunned)
         {
+            stun.gameObject.SetActive(true);
             stunTimer += Time.deltaTime;
             if (stunTimer >= ttsd.stunDuration)
             {
                 stunTimer = 0f;
+                stun.gameObject.SetActive(false);
                 isStunned = false;
             }
         }
@@ -89,6 +105,7 @@ public class TungTungSahur : MonoBehaviour
     {
         if (health <= 0)
         {
+            pd.resource += 1;
             Destroy(gameObject);
             pd.exp = pd.exp + 10;
         }
@@ -96,6 +113,7 @@ public class TungTungSahur : MonoBehaviour
     public void stunTungTungSahur(float duration)
     {
         isStunned = true;
+        if (std.canDamage)health -=5f;
         ttsd.stunDuration = duration;
     }
 

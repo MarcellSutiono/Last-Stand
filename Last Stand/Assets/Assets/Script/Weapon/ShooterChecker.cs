@@ -6,7 +6,7 @@ public class ShooterChecker : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if(col.gameObject.CompareTag("Ballerina") || col.gameObject.CompareTag("TungTung"))
+        if(col.gameObject.CompareTag("Ballerina") || col.gameObject.CompareTag("TungTung") || (col.gameObject.CompareTag("Airplane") && col.gameObject.GetComponent<AirPlane>().isStunned))
         {
             sd.enemyInsight = true;
         }

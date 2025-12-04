@@ -16,7 +16,7 @@ public class PlayerHealth : MonoBehaviour
         Timer = 0f;
         healthTimer = 1f;
     }
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
         Timer = 3f;
         pd.health -= damage;

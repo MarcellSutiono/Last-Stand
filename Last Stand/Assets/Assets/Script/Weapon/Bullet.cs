@@ -3,7 +3,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     private float speed = 8f;
-    private int health = 2;
+    private int health = 1;
     public ShooterData sd;
     void Start()
     {
@@ -24,57 +24,18 @@ public class Bullet : MonoBehaviour
     {
         if (col.gameObject.CompareTag("TungTung"))
         {
-            if (sd.level == 1)
-            {
-                col.gameObject.GetComponent<TungTungSahur>().health--;
-                health -= 2;
-            }
-            else if (sd.level == 2)
-            {
-                col.gameObject.GetComponent<TungTungSahur>().health -= 2;
-                health -= 2;
-            }
-            else if (sd.level >= 3)
-            {
-                col.gameObject.GetComponent<TungTungSahur>().health -= 2;
-                health -= 1;
-            }
+            col.gameObject.GetComponent<TungTungSahur>().health -= sd.damage;
+            health --;
         }
         else if(col.gameObject.CompareTag("Ballerina"))
         {
-            if (sd.level == 1)
-            {
-                col.gameObject.GetComponent<BallerinaCappuccina>().health--;
-                health -= 2;
-            }
-            else if (sd.level == 2)
-            {
-                col.gameObject.GetComponent<BallerinaCappuccina>().health -= 2;
-                health -= 2;
-            }
-            else if (sd.level >= 3)
-            {
-                col.gameObject.GetComponent<BallerinaCappuccina>().health -= 2;
-                health -= 1;
-            }
+            col.gameObject.GetComponent<BallerinaCappuccina>().health -= sd.damage;
+            health --;
         }
         else if (col.gameObject.CompareTag("Airplane"))
         {
-            if (sd.level == 1)
-            {
-                col.gameObject.GetComponent<AirPlane>().health--;
-                health -= 2;
-            }
-            else if (sd.level == 2)
-            {
-                col.gameObject.GetComponent<AirPlane>().health -= 2;
-                health -= 2;
-            }
-            else if (sd.level >= 3)
-            {
-                col.gameObject.GetComponent<AirPlane>().health -= 2;
-                health -= 1;
-            }
+            col.gameObject.GetComponent<AirPlane>().health -= sd.damage;
+            health --;
         }
     }
 }

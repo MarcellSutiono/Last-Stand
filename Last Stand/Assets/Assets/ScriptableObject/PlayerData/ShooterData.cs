@@ -8,4 +8,7 @@ public class ShooterData : ScriptableObject
     public float shootDelay = 2.4f;
     public int level = 1;
     public bool enemyInsight = false;
+    public float damage = 1f;
+    public bool hasDoubleProjectile = false;
+    public bool hasSplashLane = false;
 }

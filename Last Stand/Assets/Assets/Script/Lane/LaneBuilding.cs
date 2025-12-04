@@ -16,7 +16,6 @@ public class LaneBuilding : MonoBehaviour
     //------------- BUTTONS -------------
     [SerializeField] private GameObject interactButtonUI;
     [SerializeField] private Button interactButton;
-    [SerializeField] private TextMeshProUGUI interactText;
 
     //------------- SHADOWS -------------
     [SerializeField] private GameObject shooterShadow;
@@ -39,7 +38,6 @@ public class LaneBuilding : MonoBehaviour
     {
         if (col.CompareTag("Player") && pd.holdShooter)
         {
-            interactText.text = "Place Shooter";
             interactButtonUI.SetActive(true);
 
             currentShadow = shooterShadow;
@@ -55,7 +53,6 @@ public class LaneBuilding : MonoBehaviour
         }
         else if (col.CompareTag("Player") && pd.holdStunner)
         {
-            interactText.text = "Place Stunner";
             interactButtonUI.SetActive(true);
 
             currentShadow = stunnerShadow;
@@ -73,7 +70,6 @@ public class LaneBuilding : MonoBehaviour
         }
         else if (col.CompareTag("Player") && pd.holdKnocker)
         {
-            interactText.text = "Place Knocker";
             interactButtonUI.SetActive(true);
 
             currentShadow = knockerShadow;

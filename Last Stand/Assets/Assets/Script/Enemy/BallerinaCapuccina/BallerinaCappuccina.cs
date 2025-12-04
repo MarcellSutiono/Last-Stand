@@ -1,9 +1,12 @@
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BallerinaCappuccina : MonoBehaviour
 {
-    public int health = 1;
-    public int power = 10;
+    public float health = 2f;
+    public float maxHealth = 2f;
+    public float power = 10;
     public bool isAttacking = false;
     public bool isStunned = false;
     private float attackTimer = 0f;
@@ -17,9 +20,18 @@ public class BallerinaCappuccina : MonoBehaviour
     [SerializeField] private ShooterData shd;
     [SerializeField] private StunnerData std;
     [SerializeField] private KnockerData kd;
+    [SerializeField] public Slider healthBar;
+    [SerializeField] public int level;
+    [SerializeField] public TextMeshProUGUI levelText;
+    public GameObject stun;
     private void Start()
     {
         anim = GetComponent<Animator>();
+        maxHealth = 2 * Mathf.Pow(1.5f, level - 1);
+        power = 10 * Mathf.Pow(1.5f, level - 1);
+        health = maxHealth;
+
+        levelText.text = level.ToString();
 
         if (playerHealth == null)
         {
@@ -32,16 +44,20 @@ public class BallerinaCappuccina : MonoBehaviour
         deathChecker();
         attackStopwatch();
         stunStopwatch();
+
+        healthBar.value = health/maxHealth;
     }
 
     private void stunStopwatch()
     {
         if (isStunned)
         {
+            stun.gameObject.SetActive(true);
             stunTimer += Time.deltaTime;
             if (stunTimer >= bcd.stunDuration)
             {
                 stunTimer = 0f;
+                stun.gameObject.SetActive(false);
                 isStunned = false;
             }
         }
@@ -70,6 +86,7 @@ public class BallerinaCappuccina : MonoBehaviour
         if (health <= 0)
         {
             pd.exp = pd.exp + 10;
+            pd.resource += 1;
             Destroy(gameObject);
         }
     }
@@ -77,6 +94,7 @@ public class BallerinaCappuccina : MonoBehaviour
     public void stunCappuccino(float duration)
     {
         isStunned = true;
+        if (std.canDamage)health -=5f;
         bcd.stunDuration = duration;
     }
 

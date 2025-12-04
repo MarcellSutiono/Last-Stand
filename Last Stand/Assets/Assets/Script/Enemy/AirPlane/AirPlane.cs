@@ -1,10 +1,14 @@
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.UI;
 
 public class AirPlane : MonoBehaviour
 {
-    public int health = 1;
-    public int power = 25;
+    public float health = 5f;
+    public float maxHealth = 5f;
+    public float power = 25;
     public bool isAttacking = false;
     public bool isStunned = false;
     private float attackTimer = 0f;
@@ -18,10 +22,19 @@ public class AirPlane : MonoBehaviour
     [SerializeField] private ShooterData shd;
     [SerializeField] private StunnerData std;
     [SerializeField] private KnockerData kd;
-
+    [SerializeField] public Slider healthBar;
+    public int level;
+    [SerializeField] public TextMeshProUGUI levelText;
+    public GameObject stun;
     private void Start()
     {
         anim = GetComponent<Animator>();
+        maxHealth = 5 * Mathf.Pow(1.5f, level - 1);
+        power = 25 * Mathf.Pow(1.5f, level - 1);
+        health = maxHealth;
+        stun.gameObject.SetActive(false);
+        
+        levelText.text = level.ToString();
 
         if (playerHealth == null)
         {
@@ -34,6 +47,7 @@ public class AirPlane : MonoBehaviour
         deathChecker();
         attackStopwatch();
         stunStopwatch();
+        healthBar.value = health/maxHealth;
     }
 
     private void stunStopwatch()
@@ -41,9 +55,11 @@ public class AirPlane : MonoBehaviour
         if (isStunned)
         {
             stunTimer += Time.deltaTime;
+            stun.gameObject.SetActive(true);
             if (stunTimer >= apd.stunDuration)
             {
                 stunTimer = 0f;
+                stun.gameObject.SetActive(false);
                 isStunned = false;
             }
         }
@@ -72,6 +88,7 @@ public class AirPlane : MonoBehaviour
         if (health <= 0)
         {
             pd.exp = pd.exp + 10;
+            pd.resource += 1;
             Destroy(gameObject);
         }
     }
@@ -79,6 +96,7 @@ public class AirPlane : MonoBehaviour
     public void stunAirplane(float duration)
     {
         isStunned = true;
+        if (std.canDamage)health -=5f;
         apd.stunDuration = duration;
     }
 
@@ -117,7 +135,7 @@ public class AirPlane : MonoBehaviour
             attackTimer = 0f;
         }
     }
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
         health -= damage;
     }

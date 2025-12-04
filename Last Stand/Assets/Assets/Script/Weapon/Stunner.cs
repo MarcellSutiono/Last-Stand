@@ -11,12 +11,9 @@ public class Stunner : MonoBehaviour
     //------------- BUTTONS -------------
     [SerializeField] private GameObject interactButtonUI;
     [SerializeField] private GameObject upgradeButtonUI;
-    [SerializeField] private GameObject upgradePanelButtonUI;
-
     [SerializeField] private Button interactButton;
     [SerializeField] private Button upgradeButton;
 
-    [SerializeField] private TextMeshProUGUI interactText;
 
     //------------- Stunner -------------
     private bool isBroken = false;
@@ -30,12 +27,12 @@ public class Stunner : MonoBehaviour
     public AudioManager am;
     private float stunTimer = 0f;
     public TextMeshProUGUI levelIndicator;
+    private int upgradeCost = 5;
 
     private void OnTriggerStay2D(Collider2D col)
     {
         if (col.CompareTag("Player") && (!pd.holdShooter && !pd.holdKnocker))
         {
-            interactText.text = "Took Stunner";
             interactButtonUI.SetActive(true);
 
             interactButton.onClick.RemoveAllListeners();
@@ -46,19 +43,20 @@ public class Stunner : MonoBehaviour
                 this.gameObject.SetActive(false);
             });
 
-            if (pd.resource > 0 && std.level != 3)
+            if(pd.resource >= upgradeCost)
             {
-                upgradePanelButtonUI.SetActive(true);
+                upgradeButtonUI.SetActive(true);
                 upgradeButton.onClick.RemoveAllListeners();
                 upgradeButton.onClick.AddListener(() =>
                 {
-                    std.level++;
-                    pd.resource--;
+                    pd.resource -= upgradeCost;
+                    upgradeCost += 5;
+                    FindAnyObjectByType<UpgradePanel>().stunnerUpgrade();
                 });
             }
             else
             {
-                upgradePanelButtonUI.SetActive(false);
+                upgradeButtonUI.SetActive(false);
             }
         }
     }
@@ -87,7 +85,7 @@ public class Stunner : MonoBehaviour
             anim.SetTrigger("Stun");
             stunTimer = 0f;
 
-            int duration = 0;
+            float duration = std.stunTime;
             if (std.level == 1)
             {
                 duration = 2;
