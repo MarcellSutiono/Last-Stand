@@ -16,7 +16,7 @@ MonoBehaviour:
   holdShooter: 0
   holdStunner: 0
   holdKnocker: 0
-  exp: 20
+  exp: 110
   level: 1
   expNeeded: 100
   resource: 0

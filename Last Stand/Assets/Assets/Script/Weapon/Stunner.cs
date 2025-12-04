@@ -11,6 +11,7 @@ public class Stunner : MonoBehaviour
     //------------- BUTTONS -------------
     [SerializeField] private GameObject interactButtonUI;
     [SerializeField] private GameObject upgradeButtonUI;
+    [SerializeField] private GameObject upgradePanelButtonUI;
 
     [SerializeField] private Button interactButton;
     [SerializeField] private Button upgradeButton;
@@ -47,7 +48,7 @@ public class Stunner : MonoBehaviour
 
             if (pd.resource > 0 && std.level != 3)
             {
-                upgradeButtonUI.SetActive(true);
+                upgradePanelButtonUI.SetActive(true);
                 upgradeButton.onClick.RemoveAllListeners();
                 upgradeButton.onClick.AddListener(() =>
                 {
@@ -57,7 +58,7 @@ public class Stunner : MonoBehaviour
             }
             else
             {
-                upgradeButtonUI.SetActive(false);
+                upgradePanelButtonUI.SetActive(false);
             }
         }
     }
