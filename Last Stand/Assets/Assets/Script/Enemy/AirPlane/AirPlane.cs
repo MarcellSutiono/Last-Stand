@@ -26,6 +26,7 @@ public class AirPlane : MonoBehaviour
     public int level;
     [SerializeField] public TextMeshProUGUI levelText;
     public GameObject stun;
+    private SimpleFlash flashScript;
     private void Start()
     {
         anim = GetComponent<Animator>();
@@ -35,6 +36,7 @@ public class AirPlane : MonoBehaviour
         stun.gameObject.SetActive(false);
         
         levelText.text = level.ToString();
+        flashScript = GetComponent<SimpleFlash>();
 
         if (playerHealth == null)
         {
@@ -96,7 +98,10 @@ public class AirPlane : MonoBehaviour
     public void stunAirplane(float duration)
     {
         isStunned = true;
-        if (std.canDamage)health -=5f;
+        if (std.damage != 0)
+        {
+            TakeDamage(std.damage);
+        }
         apd.stunDuration = duration;
     }
 
@@ -137,6 +142,13 @@ public class AirPlane : MonoBehaviour
     }
     public void TakeDamage(float damage)
     {
-        health -= damage;
+        if (isStunned && std.canKnockback)
+        {
+            health -= damage * 1.1f;
+        }
+        {
+            health -= damage;
+        }
+        flashScript.Flash();
     }
 }

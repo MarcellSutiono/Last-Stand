@@ -37,17 +37,17 @@ public class WaveScript : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("TungTung"))
         {
-            collision.gameObject.GetComponent<TungTungSahur>().health -= kd.damage;
+            collision.gameObject.GetComponent<TungTungSahur>().TakeDamage(kd.damage);
         }
         else if(collision.gameObject.CompareTag("Ballerina"))
         {
-            collision.gameObject.GetComponent<BallerinaCappuccina>().health -= kd.damage;
+            collision.gameObject.GetComponent<BallerinaCappuccina>().TakeDamage(kd.damage);
         }
         else if (collision.gameObject.CompareTag("Airplane"))
         {
             if(collision.gameObject.GetComponent<AirPlane>().isStunned)
             {
-                collision.gameObject.GetComponent<AirPlane>().health -= kd.damage;
+                collision.gameObject.GetComponent<AirPlane>().TakeDamage(kd.damage);
             }
         }
     }

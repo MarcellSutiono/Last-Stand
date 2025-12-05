@@ -24,6 +24,7 @@ public class BallerinaCappuccina : MonoBehaviour
     [SerializeField] public int level;
     [SerializeField] public TextMeshProUGUI levelText;
     public GameObject stun;
+    private SimpleFlash flashScript;
     private void Start()
     {
         anim = GetComponent<Animator>();
@@ -32,6 +33,7 @@ public class BallerinaCappuccina : MonoBehaviour
         health = maxHealth;
 
         levelText.text = level.ToString();
+        flashScript = GetComponent<SimpleFlash>();
 
         if (playerHealth == null)
         {
@@ -94,7 +96,10 @@ public class BallerinaCappuccina : MonoBehaviour
     public void stunCappuccino(float duration)
     {
         isStunned = true;
-        if (std.canDamage)health -=5f;
+        if (std.damage != 0)
+        {
+            TakeDamage(std.damage);
+        }
         bcd.stunDuration = duration;
     }
 
@@ -134,8 +139,15 @@ public class BallerinaCappuccina : MonoBehaviour
             attackTimer = 0f;
         }
     }
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
-        health -= damage;
+        if (isStunned && std.canKnockback)
+        {
+            health -= damage * 1.1f;
+        }
+        {
+            health -= damage;
+        }
+        flashScript.Flash();
     }
 }

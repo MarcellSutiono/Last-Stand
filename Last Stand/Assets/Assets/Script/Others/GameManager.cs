@@ -43,7 +43,7 @@ public class GameManager : MonoBehaviour
         stunnerData.health = 40f;
         stunnerData.stunCooldown = 2f;
         stunnerData.level = 1;
-        stunnerData.canDamage = false;
+        stunnerData.damage = 0;
 
         // Reset KnockerData
         knockerData.maxHealth = 25f;

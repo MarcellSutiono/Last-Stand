@@ -23,6 +23,7 @@ public class TungTungSahur : MonoBehaviour
     public int level;
     [SerializeField] public TextMeshProUGUI levelText;
     public GameObject stun;
+    private SimpleFlash flashScript;
 
     private void Start()
     {
@@ -30,6 +31,7 @@ public class TungTungSahur : MonoBehaviour
         maxHealth = 6 * Mathf.Pow(1.5f, level - 1);
         power = 10* Mathf.Pow(1.5f, level - 1);
         health = maxHealth;
+        flashScript = GetComponent<SimpleFlash>();
 
         levelText.text = level.ToString();
 
@@ -113,7 +115,10 @@ public class TungTungSahur : MonoBehaviour
     public void stunTungTungSahur(float duration)
     {
         isStunned = true;
-        if (std.canDamage)health -=5f;
+        if (std.damage != 0)
+        {
+            TakeDamage(std.damage);
+        }
         ttsd.stunDuration = duration;
     }
 
@@ -151,9 +156,16 @@ public class TungTungSahur : MonoBehaviour
         }
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
+        if (isStunned && std.canKnockback)
+        {
+            health -= damage * 1.1f;
+        }
+        {
+            health -= damage;
+        }
         Debug.Log("Tungtung: " + (health));
-        health -= damage;
+        flashScript.Flash();
     }
 }

@@ -93,12 +93,10 @@ public class Stunner : MonoBehaviour
             else if(std.level == 2)
             {
                 duration = 3;
-                std.canDamage = true;
             }
             else if (std.level == 3)
             {
                 duration = 4;
-                std.canDamage = true;
             }
 
             for (int i = 0; i < tungTungSahurParent.transform.childCount; i++)
@@ -108,10 +106,6 @@ public class Stunner : MonoBehaviour
                 if (ttsScript.isActiveAndEnabled)
                 {
                     ttsScript.stunTungTungSahur(duration);
-                    if(std.canDamage)
-                    {
-                        ttsScript.health -= 1;
-                    }
                 }
             }
 
@@ -122,10 +116,6 @@ public class Stunner : MonoBehaviour
                 if (caScript.isActiveAndEnabled)
                 {
                     caScript.stunCappuccino(duration);
-                    if (std.canDamage)
-                    {
-                        caScript.health -= 1;
-                    }
                 }
             }
 
@@ -136,10 +126,6 @@ public class Stunner : MonoBehaviour
                 if (apScript.isActiveAndEnabled)
                 {
                     apScript.stunAirplane(duration);
-                    if (std.canDamage)
-                    {
-                        apScript.health -= 1;
-                    }
                 }
             }
         }

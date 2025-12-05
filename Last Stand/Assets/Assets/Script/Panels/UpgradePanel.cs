@@ -218,7 +218,6 @@ public void stunnerUpgrade()
         
         // Re-roll if duplicate or already owned
         while (availableUpgrades.Contains(upgradeId) || 
-               (upgradeId == 1 && stunnerd.canDamage) || 
                (upgradeId == 2 && stunnerd.canKnockback))
         {
             upgradeId = GetRandomStunnerUpgrade();
@@ -254,9 +253,11 @@ private string stunnerGetUpgradeDescription(int upgradeId)
     switch (upgradeId)
     {
         case 1:
-            return "Deal Damage on Stun";
+            float currentDamage = stunnerd.damage;
+            float newDamage = currentDamage + 3f;
+            return $"Damage: {currentDamage:F1} -> {newDamage:F1}";
         case 2:
-            return "Knockback on Stun";
+            return "Brainrot takes 10% more damage when stunned";
         case 3:
             float currentCd3 = stunnerd.stunCooldown;
             float newCd3 = currentCd3 * 0.98f;
@@ -291,7 +292,7 @@ private string stunnerGetUpgradeDescription(int upgradeId)
         switch (upgradeId)
         {
             case 1:
-                stunnerd.canDamage = true;
+                stunnerd.damage += 2f;
                 break;
             case 2:
                 stunnerd.canKnockback = true;

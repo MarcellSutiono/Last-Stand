@@ -24,17 +24,17 @@ public class Bullet : MonoBehaviour
     {
         if (col.gameObject.CompareTag("TungTung"))
         {
-            col.gameObject.GetComponent<TungTungSahur>().health -= sd.damage;
+            col.gameObject.GetComponent<TungTungSahur>().TakeDamage(sd.damage);
             health --;
         }
         else if(col.gameObject.CompareTag("Ballerina"))
         {
-            col.gameObject.GetComponent<BallerinaCappuccina>().health -= sd.damage;
+            col.gameObject.GetComponent<BallerinaCappuccina>().TakeDamage(sd.damage);
             health --;
         }
         else if (col.gameObject.CompareTag("Airplane"))
         {
-            col.gameObject.GetComponent<AirPlane>().health -= sd.damage;
+            col.gameObject.GetComponent<AirPlane>().TakeDamage(sd.damage);
             health --;
         }
     }
