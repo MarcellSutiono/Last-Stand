@@ -10,6 +10,7 @@ public class PlayerManager : MonoBehaviour
     public Slider slider;
     public TextMeshProUGUI levelText;
     public TextMeshProUGUI expText;
+    public AudioManager am;
 
     private void Start()
     {
@@ -36,6 +37,7 @@ public class PlayerManager : MonoBehaviour
         slider.value = pd.exp;
         if (pd.exp >= pd.expNeeded)
         {
+            am.playSFX(am.levelUpPlayerSFX);
             pd.exp = 0;
             pd.maxHealth += 5;
             pd.health = pd.maxHealth;

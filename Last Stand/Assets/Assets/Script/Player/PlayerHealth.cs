@@ -11,6 +11,8 @@ public class PlayerHealth : MonoBehaviour
     public float Timer;
     public float healthTimer;
 
+    public AudioManager am;
+
     private void Start()
     {
         Timer = 0f;
@@ -18,6 +20,7 @@ public class PlayerHealth : MonoBehaviour
     }
     public void TakeDamage(float damage)
     {
+        am.playSFX(am.playerHitSFX);
         Timer = 3f;
         pd.health -= damage;
         healthbar.fillAmount = pd.health / 100;

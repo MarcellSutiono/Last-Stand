@@ -25,6 +25,7 @@ public class TungTungSahur : MonoBehaviour
     public GameObject stun;
     private SimpleFlash flashScript;
 
+    public AudioManager am;
     private void Start()
     {
         anim = GetComponent<Animator>();

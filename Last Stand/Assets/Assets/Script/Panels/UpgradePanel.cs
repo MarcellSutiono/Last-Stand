@@ -12,7 +12,7 @@ public class UpgradePanel : MonoBehaviour
     public ShooterData sd;
     public KnockerData kd;
     private List<int> shooterUpgrades = new List<int> { 1, 2, 3, 4, 5 };
-
+    public AudioManager am;
 
     public void Start()
     {
@@ -104,6 +104,7 @@ public class UpgradePanel : MonoBehaviour
                 sd.health = sd.maxHealth;
                 break;
         }
+        am.playSFX(am.levelUpTowerSFX);
         sd.level++;
         upgradePanelUI.SetActive(false);
         Time.timeScale = 1f;
@@ -198,6 +199,7 @@ public class UpgradePanel : MonoBehaviour
                 kd.moveSpeed *= 1.1f;
                 break;
         }
+        am.playSFX(am.levelUpTowerSFX);
         kd.level++;
         upgradePanelUI.SetActive(false);
         Time.timeScale = 1f;
@@ -317,6 +319,7 @@ private string stunnerGetUpgradeDescription(int upgradeId)
             stunnerd.stunTime *= 1.1f;
             break;
         }
+        am.playSFX(am.levelUpTowerSFX);
         stunnerd.level++;
         upgradePanelUI.SetActive(false);
         Time.timeScale = 1f;

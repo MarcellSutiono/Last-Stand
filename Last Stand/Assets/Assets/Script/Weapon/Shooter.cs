@@ -16,7 +16,6 @@ public class Shooter : MonoBehaviour
     [SerializeField] private Button upgradeButton;
 
     //------------- SHOOTER -------------
-    private bool isBroken = true;
     [SerializeField] private ShooterData sd;
     [SerializeField] private GameObject bullet;
     [SerializeField] private TextMeshProUGUI levelIndicator;

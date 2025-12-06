@@ -17,6 +17,8 @@ public class PlayerAttack : MonoBehaviour
     private Vector2 lastMoveDirection;
     private Vector2 dir;
 
+    public AudioManager am;
+
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -47,6 +49,7 @@ public class PlayerAttack : MonoBehaviour
     {
         if (animator != null)
         {
+            am.playSFX(am.swingSFX);
             animator.SetFloat("AttackX", dir.x);
             animator.SetFloat("AttackY", dir.y);
             animator.SetTrigger("attack");

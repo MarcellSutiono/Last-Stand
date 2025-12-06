@@ -15,6 +15,11 @@ public class AudioManager : MonoBehaviour
     public AudioClip placeTowerSFX;
     public AudioClip WeaponSwingSFX;
     public AudioClip zapSFX;
+    public AudioClip levelUpPlayerSFX;
+    public AudioClip levelUpTowerSFX;
+    public AudioClip swingSFX;
+    public AudioClip teslaSFX;
+    public AudioClip towerDamagedSFX;
 
     private void Start()
     {

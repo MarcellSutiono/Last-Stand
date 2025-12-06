@@ -596,6 +596,7 @@ MonoBehaviour:
   slider: {fileID: 1770371862}
   levelText: {fileID: 1404264075}
   expText: {fileID: 1611353106}
+  am: {fileID: 960396942}
 --- !u!114 &70755017
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -632,6 +633,7 @@ MonoBehaviour:
   - {fileID: 1410692245}
   sd: {fileID: 11400000, guid: a8349b994e0a1744e8830b1b53995d03, type: 2}
   kd: {fileID: 11400000, guid: f2b6107dab32fd04ca320b7cba325108, type: 2}
+  am: {fileID: 960396942}
   stunnerd: {fileID: 11400000, guid: 39f7f0b52ea2907468e72521517925fd, type: 2}
 --- !u!1 &81355830
 GameObject:
@@ -3003,7 +3005,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 8.1
+  orthographic size: 7.297297
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -3971,6 +3973,7 @@ MonoBehaviour:
   attackRange: 1
   damage: 1
   currentAttackPos: {fileID: 0}
+  am: {fileID: 960396942}
 --- !u!114 &829157457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3989,6 +3992,7 @@ MonoBehaviour:
   Offset: {x: 0, y: 1, z: 0}
   Timer: 0
   healthTimer: 0
+  am: {fileID: 960396942}
 --- !u!114 &829157459 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1526842782032772179, guid: bb2fb06f5dddecc4c921488e98879298, type: 3}
@@ -4922,6 +4926,11 @@ MonoBehaviour:
   placeTowerSFX: {fileID: 8300000, guid: 82cedd8a59b539045bff38940f82a0b3, type: 3}
   WeaponSwingSFX: {fileID: 8300000, guid: dffd5f8dc5527be45a3a912ede955192, type: 3}
   zapSFX: {fileID: 8300000, guid: f05cf2827f380704095a28619ff8a51a, type: 3}
+  levelUpPlayerSFX: {fileID: 8300000, guid: 673e5a8422094dc4985fab69e41cba7a, type: 3}
+  levelUpTowerSFX: {fileID: 8300000, guid: 063b5c5bc7f789f4991e8c8f61259dc0, type: 3}
+  swingSFX: {fileID: 8300000, guid: 7d36d64c2fd68594ea304bd893a4147f, type: 3}
+  teslaSFX: {fileID: 8300000, guid: 3eaab554140bac2438e13cca8ba9e95f, type: 3}
+  towerDamagedSFX: {fileID: 8300000, guid: 49712dfdb8b42a1469202e9009772649, type: 3}
 --- !u!4 &960396943
 Transform:
   m_ObjectHideFlags: 0

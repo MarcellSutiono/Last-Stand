@@ -27,6 +27,9 @@ public class AirPlane : MonoBehaviour
     [SerializeField] public TextMeshProUGUI levelText;
     public GameObject stun;
     private SimpleFlash flashScript;
+
+    public AudioManager am;
+
     private void Start()
     {
         anim = GetComponent<Animator>();
