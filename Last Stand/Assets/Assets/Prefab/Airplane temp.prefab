@@ -790,6 +790,7 @@ GameObject:
   - component: {fileID: 5358064898461251939}
   - component: {fileID: 6688858537572609964}
   - component: {fileID: -3331888911296700646}
+  - component: {fileID: 1853891789222166512}
   m_Layer: 3
   m_Name: Airplane temp
   m_TagString: Airplane
@@ -898,6 +899,7 @@ MonoBehaviour:
   level: 0
   levelText: {fileID: 967023391572223053}
   stun: {fileID: 580143277971202353}
+  am: {fileID: 0}
 --- !u!61 &5358064898461251939
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -980,6 +982,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   duration: 0.2
   flashIntensity: 2
+--- !u!50 &1853891789222166512
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9058019389081453442}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &9205207759328014353
 GameObject:
   m_ObjectHideFlags: 0
