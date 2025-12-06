@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
         playerData.exp = 0;
         playerData.level = 1;
         playerData.expNeeded = 10;
-        playerData.resource = 999;
+        playerData.resource = 0 ;
         playerData.health = 100;
         playerData.maxHealth = 100;
         playerData.attackCooldown = 0.6f;
@@ -44,11 +44,14 @@ public class GameManager : MonoBehaviour
         stunnerData.stunCooldown = 2f;
         stunnerData.level = 1;
         stunnerData.damage = 0;
+        stunnerData.canKnockback = false;
 
         // Reset KnockerData
         knockerData.maxHealth = 25f;
         knockerData.health = 25f;
         knockerData.level = 1;
+        knockerData.damage = 0;
+        knockerData.pushDistance = 3f;
 
     }
 }

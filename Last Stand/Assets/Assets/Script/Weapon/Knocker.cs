@@ -27,6 +27,7 @@ public class Knocker : MonoBehaviour
     private Animator anim;
     private float knockTimer = 0f;
     [SerializeField] private int upgradeCost = 5;
+    public GameObject upgradeText;
 
     private void OnTriggerStay2D(Collider2D col)
     {
@@ -73,6 +74,8 @@ public class Knocker : MonoBehaviour
 
     private void Update()
     {
+        if (pd.resource >= upgradeCost) upgradeText.SetActive(true);
+        else upgradeText.SetActive(false);
         knockTimer += Time.deltaTime;
     }
 

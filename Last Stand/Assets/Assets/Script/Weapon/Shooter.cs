@@ -24,6 +24,7 @@ public class Shooter : MonoBehaviour
 
     //------------- SHOOTER -------------
     public AudioManager am;
+    public GameObject upgradeText;
 
     private void OnTriggerStay2D(Collider2D col)
     {
@@ -65,6 +66,8 @@ public class Shooter : MonoBehaviour
 
     private void Update()
     {
+        if (pd.resource >= upgradeCost) upgradeText.SetActive(true);
+        else upgradeText.SetActive(false);
         shooting();
         levelIndicator.text = sd.level.ToString();
     }

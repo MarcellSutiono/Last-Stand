@@ -28,6 +28,7 @@ public class Stunner : MonoBehaviour
     private float stunTimer = 0f;
     public TextMeshProUGUI levelIndicator;
     private int upgradeCost = 5;
+    public GameObject upgradeText;
 
     private void OnTriggerStay2D(Collider2D col)
     {
@@ -72,6 +73,8 @@ public class Stunner : MonoBehaviour
     }
     private void Update()
     {
+        if (pd.resource >= upgradeCost) upgradeText.SetActive(true);
+        else upgradeText.SetActive(false);
         stunTimer += Time.deltaTime;
         levelIndicator.text = std.level.ToString();
     }

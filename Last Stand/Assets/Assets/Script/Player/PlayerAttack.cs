@@ -1,3 +1,4 @@
+using Unity.Jobs;
 using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
@@ -33,11 +34,6 @@ public class PlayerAttack : MonoBehaviour
 
         if (attackTimer <= 0)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                PerformAttack();
-                attackTimer = pd.attackCooldown;
-            }
         }
         else
         {
@@ -47,6 +43,14 @@ public class PlayerAttack : MonoBehaviour
 
     public void PerformAttack()
     {
+        if (attackTimer <= 0)
+        {
+            attackTimer = pd.attackCooldown;
+        }
+        else
+        {
+            return;
+        }
         if (animator != null)
         {
             am.playSFX(am.swingSFX);

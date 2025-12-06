@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d98051df8885774281cb4d58821b404, type: 3}
   m_Name: StunnerData
   m_EditorClassIdentifier: 
-  maxHealth: 35
-  health: 35
+  maxHealth: 40
+  health: 40
   stunCooldown: 5
   level: 1
-  canDamage: 0
+  damage: 0
+  stunTime: 2
+  canKnockback: 0
