@@ -20,6 +20,7 @@ public class GameOverHandler : MonoBehaviour
     public void playAgain()
     {
         resetData();
+        Interstitial.Instance.LoadAd();
         SceneManager.LoadScene(1);
     }
 

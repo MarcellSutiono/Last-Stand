@@ -4914,6 +4914,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 026f2b188fbdc31479ca70bdc4b86ce1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameOverLayout: {fileID: 1257448667}
   pd: {fileID: 11400000, guid: c3dd65029d1af22499085f8719e84b74, type: 2}
   healthbar: {fileID: 88854234}
   border: {fileID: 765235515}

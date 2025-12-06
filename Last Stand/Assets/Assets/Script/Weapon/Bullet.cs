@@ -14,7 +14,7 @@ public class Bullet : MonoBehaviour
     {
         transform.Translate(Vector3.right * speed * Time.deltaTime);
 
-        if(health == 0)
+        if (health == 0)
         {
             Destroy(this.gameObject);
         }
@@ -25,17 +25,17 @@ public class Bullet : MonoBehaviour
         if (col.gameObject.CompareTag("TungTung"))
         {
             col.gameObject.GetComponent<TungTungSahur>().TakeDamage(sd.damage);
-            health --;
+            health--;
         }
-        else if(col.gameObject.CompareTag("Ballerina"))
+        else if (col.gameObject.CompareTag("Ballerina"))
         {
             col.gameObject.GetComponent<BallerinaCappuccina>().TakeDamage(sd.damage);
-            health --;
+            health--;
         }
         else if (col.gameObject.CompareTag("Airplane"))
         {
             col.gameObject.GetComponent<AirPlane>().TakeDamage(sd.damage);
-            health --;
+            health--;
         }
     }
 }

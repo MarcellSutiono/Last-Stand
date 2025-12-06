@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
+    public GameObject gameOverLayout;
     [SerializeField] private PlayerData pd;
     [SerializeField] private Image healthbar;
     [SerializeField] private Image border;
@@ -48,7 +49,8 @@ public class PlayerHealth : MonoBehaviour
 
         if (pd.health <= 0)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            Time.timeScale = 0f;
+            gameOverLayout.SetActive(true);
         }
     }
 }
