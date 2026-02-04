@@ -1,0 +1,575 @@
+fileFormatVersion: 2
+guid: ce25988834f437140b409866dc81fe93
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2672352154900672366
+    second: Crocodile-Attack-Sheet_0
+  - first:
+      213: 3416797920114535535
+    second: Crocodile-Attack-Sheet_1
+  - first:
+      213: 6319388226455259822
+    second: Crocodile-Attack-Sheet_2
+  - first:
+      213: -2693744999148932153
+    second: Crocodile-Attack-Sheet_3
+  - first:
+      213: -9048930161169373050
+    second: Crocodile-Attack-Sheet_4
+  - first:
+      213: 999428677228220224
+    second: Crocodile-Attack-Sheet_5
+  - first:
+      213: -4332665738751235212
+    second: Crocodile-Attack-Sheet_6
+  - first:
+      213: -2055611501234079760
+    second: Crocodile-Attack-Sheet_7
+  - first:
+      213: -6931548748337607079
+    second: Crocodile-Attack-Sheet_8
+  - first:
+      213: 2095678092762604616
+    second: Crocodile-Attack-Sheet_9
+  - first:
+      213: 4412704532501224051
+    second: Crocodile-Attack-Sheet_10
+  - first:
+      213: 3950719818223177689
+    second: Crocodile-Attack-Sheet_11
+  - first:
+      213: -6527442880062007593
+    second: Crocodile-Attack-Sheet_12
+  - first:
+      213: -283556875355885194
+    second: Crocodile-Attack-Sheet_13
+  - first:
+      213: 4575028083867765528
+    second: Crocodile-Attack-Sheet_14
+  - first:
+      213: 8582338464254936152
+    second: Crocodile-Attack-Sheet_15
+  - first:
+      213: -2455916123927805954
+    second: Crocodile-Attack-Sheet_16
+  - first:
+      213: 5345465703526461021
+    second: Crocodile-Attack-Sheet_17
+  - first:
+      213: -7095612321269859872
+    second: Crocodile-Attack-Sheet_18
+  - first:
+      213: 6119468572022746001
+    second: Crocodile-Attack-Sheet_19
+  - first:
+      213: 1013131257116853824
+    second: Crocodile-Attack-Sheet_20
+  - first:
+      213: -7361661832378228747
+    second: Crocodile-Attack-Sheet_21
+  - first:
+      213: 1915133676810856561
+    second: Crocodile-Attack-Sheet_22
+  - first:
+      213: 642488847490766713
+    second: Crocodile-Attack-Sheet_23
+  - first:
+      213: 1399540700604680397
+    second: Crocodile-Attack-Sheet_24
+  - first:
+      213: -669339907535792471
+    second: Crocodile-Attack-Sheet_25
+  - first:
+      213: 6664355015244428155
+    second: Crocodile-Attack-Sheet_26
+  - first:
+      213: -1942874068014935837
+    second: Crocodile-Attack-Sheet_27
+  - first:
+      213: -4961540127323709543
+    second: Crocodile-Attack-Sheet_28
+  - first:
+      213: 5368170441070478474
+    second: Crocodile-Attack-Sheet_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Crocodile-Attack-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 580
+        height: 420
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce5c13df36378af498bc8777aba1d656
+      internalID: 52717288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crocodile-Attack-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 0
+        width: 580
+        height: 420
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 938e995e108794f4eb7ed523637c73af
+      internalID: 1317842068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crocodile-Attack-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 0
+        width: 580
+        height: 420
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a0fdd74adc179547a3016826d3f3662
+      internalID: 1453617675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crocodile-Attack-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1770
+        y: 0
+        width: 580
+        height: 420
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43e85e516bd8bfc4a8bda50cdeeffd2d
+      internalID: 1692970765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crocodile-Attack-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 2360
+        y: 0
+        width: 580
+        height: 420
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07c08ebf769936348b58218e21d10f7b
+      internalID: -2012306907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crocodile-Attack-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 2950
+        y: 0
+        width: 580
+        height: 420
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb66f0fd97e105f4b8763b6fb6db062d
+      internalID: 701284185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crocodile-Attack-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 3540
+        y: 0
+        width: 580
+        height: 420
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ed0dc3bb3ebcab45b8ecb6e605adb61
+      internalID: -1886072872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crocodile-Attack-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 4130
+        y: 0
+        width: 580
+        height: 420
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d81d4326a896854887df0fcd8b1f713
+      internalID: -286877472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crocodile-Attack-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 4720
+        y: 0
+        width: 580
+        height: 420
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e801db212bd9e524c8163f540cab2c71
+      internalID: 977363992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crocodile-Attack-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 5310
+        y: 0
+        width: 580
+        height: 420
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86c975909858b1b4295390aeb6a0e273
+      internalID: -1748841032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crocodile-Attack-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 5900
+        y: 0
+        width: 580
+        height: 420
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b09e91943ee1ba4d871f252f97de88f
+      internalID: -1102069297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crocodile-Attack-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 6490
+        y: 0
+        width: 580
+        height: 420
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66b344bab0f803a4bb47651f86fde0a7
+      internalID: 1365009018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crocodile-Attack-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 7080
+        y: 0
+        width: 580
+        height: 420
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02f41d9e6d73e874b9243cb39110ef66
+      internalID: -1185927496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crocodile-Attack-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 7670
+        y: 0
+        width: 580
+        height: 420
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58fdf55870e361a4e9cee6b0425592c7
+      internalID: -363472140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crocodile-Attack-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 8260
+        y: 0
+        width: 580
+        height: 420
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36ca0eb76b610364892a910f5192c2fa
+      internalID: 482985396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crocodile-Attack-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 8850
+        y: 0
+        width: 580
+        height: 420
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63473fe2a551c504f9f111707719374a
+      internalID: 528864376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 021c92e5388f6a547a3bfb4c6d2de32d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Crocodile-Attack-Sheet_0: 52717288
+      Crocodile-Attack-Sheet_1: 1317842068
+      Crocodile-Attack-Sheet_10: -1102069297
+      Crocodile-Attack-Sheet_11: 1365009018
+      Crocodile-Attack-Sheet_12: -1185927496
+      Crocodile-Attack-Sheet_13: -363472140
+      Crocodile-Attack-Sheet_14: 482985396
+      Crocodile-Attack-Sheet_15: 528864376
+      Crocodile-Attack-Sheet_2: 1453617675
+      Crocodile-Attack-Sheet_3: 1692970765
+      Crocodile-Attack-Sheet_4: -2012306907
+      Crocodile-Attack-Sheet_5: 701284185
+      Crocodile-Attack-Sheet_6: -1886072872
+      Crocodile-Attack-Sheet_7: -286877472
+      Crocodile-Attack-Sheet_8: 977363992
+      Crocodile-Attack-Sheet_9: -1748841032
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
